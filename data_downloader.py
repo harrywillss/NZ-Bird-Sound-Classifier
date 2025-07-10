@@ -12,7 +12,7 @@ import pandas as pd
 class BirdRecordingDownloader:
     BASE_URL = "https://xeno-canto.org/api/3/recordings"
 
-    def __init__(self, country="=New Zealand", group="birds", recording_type="song", quality=">C", output_dir="downloads"):
+    def __init__(self, country="New Zealand", group="birds", recording_type="song", quality=">C", output_dir="downloads"):
         self.country = country
         self.group = group
         self.recording_type = recording_type
@@ -117,12 +117,27 @@ class BirdRecordingDownloader:
             for rec in recordings if "file" in rec and "id" in rec
         ])
 
+        # Remove recordings with 'Identity unknown'
+        df = df[df['english_name'] != "Identity unknown"]
+        if df.empty:
+            print("⚠️ No valid recordings found after filtering.")
+            return
+        
+        # Combine North Island and South Island species
+        df['english_name'] = df['english_name'].str.replace("North Island ", "", regex=False).str.replace("South Island ", "", regex=False)
+
+        # Remove "New Zealand" from species names
+        df['english_name'] = df['english_name'].str.replace("New Zealand ", "", regex=False)
+        
+        # Parse length from "m:ss" format to seconds
+        df['length'] = df['length'].apply(self._parse_length)
+
         print("\n📋 --- Recordings Summary ---")
         print(f"Total recordings: {len(df)}")
         print(f"Unique species: {df['species'].nunique()}")
 
-        print("\nTop 10 species by number of recordings:")
-        print(df['species'].value_counts().head(10))
+        print("\nTop 20 species by number of recordings:")
+        print(df['english_name'].value_counts().head(20))
 
         avg_length = df['length'].mean()
         print(f"\nAverage recording length: {avg_length:.2f} seconds")
@@ -149,7 +164,12 @@ class BirdRecordingDownloader:
         #self.save_metadata(recordings)
         self.report_summary(recordings)
 
-
 if __name__ == "__main__":
     downloader = BirdRecordingDownloader()
     downloader.run()
+
+# TODO:
+# - Add more error handling for network requests and file operations.
+# - Implement a progress bar for downloads.
+# - Remove 'Identity unknown' recordings
+# - Combine separate "North Island" and "South Island" bird types into a single type.
