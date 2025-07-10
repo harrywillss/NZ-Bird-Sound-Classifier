@@ -2,6 +2,7 @@ import os
 import json
 import requests
 import pandas as pd
+import re
 
 # Using advanced search to find bird songs in New Zealand
 # see https://xeno-canto.org/help/search
@@ -12,7 +13,7 @@ import pandas as pd
 class BirdRecordingDownloader:
     BASE_URL = "https://xeno-canto.org/api/3/recordings"
 
-    def __init__(self, country="New Zealand", group="birds", recording_type="song", quality=">C", output_dir="downloads"):
+    def __init__(self, country="New Zealand", group="birds", recording_type="call", quality=">C", output_dir="downloads"):
         self.country = country
         self.group = group
         self.recording_type = recording_type
@@ -49,6 +50,11 @@ class BirdRecordingDownloader:
             page += 1
         return {"recordings": all_recordings}
 
+    def _sanitize(self, text):
+        # Lowercase, replace spaces with underscores, remove non-alphanum/underscore
+        text = str(text).lower().replace(" ", "_")
+        return re.sub(r'[^a-z0-9_]', '', text)
+
     def download_recordings(self, recordings):
         downloaded = []
         for rec in recordings:
@@ -57,10 +63,13 @@ class BirdRecordingDownloader:
 
             file_url = rec["file"]
             file_id = rec["id"]
-            gen = rec.get("gen", "Unknown")
-            sp = rec.get("sp", "Unknown")
+            gen = self._sanitize(rec.get("gen", "unknown"))
+            sp = self._sanitize(rec.get("sp", "unknown"))
+            en = self._sanitize(rec.get("en", "unknown"))
+            rec_type = self._sanitize(rec.get("type", self.recording_type))
 
-            filename = f"{file_id}_{gen}_{sp}.mp3"
+            genus_species = f"{gen}_{sp}"
+            filename = f"{file_id}_{en}_{genus_species}_{rec_type}.mp3"
             filepath = os.path.join(self.output_dir, filename)
 
             print(f"⬇️ Downloading {filename}...")
@@ -128,9 +137,6 @@ class BirdRecordingDownloader:
 
         # Remove "New Zealand" from species names
         df['english_name'] = df['english_name'].str.replace("New Zealand ", "", regex=False)
-        
-        # Parse length from "m:ss" format to seconds
-        df['length'] = df['length'].apply(self._parse_length)
 
         print("\n📋 --- Recordings Summary ---")
         print(f"Total recordings: {len(df)}")
@@ -154,15 +160,24 @@ class BirdRecordingDownloader:
             return 0
 
     def run(self):
-        data = self.fetch_data()
-        recordings = data.get("recordings", [])
-        if not recordings:
-            print("⚠️ No recordings found.")
-            return
+        # Fetch 'song' recordings
+        self.recording_type = "song"
+        self.query_string = self.build_query()
+        data_song = self.fetch_data()
+        recordings_song = data_song.get("recordings", [])
 
-        #self.download_recordings(recordings)
-        #self.save_metadata(recordings)
-        self.report_summary(recordings)
+        # Fetch 'call' recordings
+        self.recording_type = "call"
+        self.query_string = self.build_query()
+        data_call = self.fetch_data()
+        recordings_call = data_call.get("recordings", [])
+
+        # Combine and remove duplicates by 'id'
+        all_recordings = {rec['id']: rec for rec in recordings_song + recordings_call}.values()
+
+        #self.download_recordings(all_recordings)
+        #self.save_metadata(all_recordings)
+        self.report_summary(list(all_recordings))
 
 if __name__ == "__main__":
     downloader = BirdRecordingDownloader()
