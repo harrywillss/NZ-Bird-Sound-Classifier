@@ -12,7 +12,6 @@ import re
 
 class BirdRecordingDownloader:
     BASE_URL = "https://xeno-canto.org/api/3/recordings"
-
     def __init__(self, country="New Zealand", group="birds", recording_type="call", quality=">C", output_dir="downloads"):
         self.country = country
         self.group = group
@@ -57,7 +56,13 @@ class BirdRecordingDownloader:
 
     def download_recordings(self, recordings):
         downloaded = []
+        i = 0
         for rec in recordings:
+            i += 1
+            if i == 10:
+                print("⏸️ Download limit reached (10 recordings). Stopping downloads.")
+                break
+            print(f"Processing recording {i}/{len(recordings)}: {rec.get('id', 'unknown')}")
             if "file" not in rec or "id" not in rec:
                 continue
 
@@ -67,9 +72,13 @@ class BirdRecordingDownloader:
             sp = self._sanitize(rec.get("sp", "unknown"))
             en = self._sanitize(rec.get("en", "unknown"))
             rec_type = self._sanitize(rec.get("type", self.recording_type))
+            length = rec.get("length", "0:00")
+            if length == "0:00":
+                print(f"⚠️ Recording {file_id} has no length data, skipping download.")
+                continue
 
             genus_species = f"{gen}_{sp}"
-            filename = f"{file_id}_{en}_{genus_species}_{rec_type}.mp3"
+            filename = f"{file_id}_{en}_{genus_species}_{rec_type}.wav"
             filepath = os.path.join(self.output_dir, filename)
 
             print(f"⬇️ Downloading {filename}...")
@@ -95,8 +104,6 @@ class BirdRecordingDownloader:
                     "english_name": rec.get("en", "Unknown"),
                     "sex": rec.get("sex", "Unknown"),
                     "file_url": rec["file"],
-                    "sonogram_url": rec.get("sono", None),
-                    "oscillogram_url": rec.get("osci", None),
                     "length": rec.get("length", "Unknown")
                 }
                 for rec in recordings if "file" in rec and "id" in rec
@@ -126,11 +133,12 @@ class BirdRecordingDownloader:
             for rec in recordings if "file" in rec and "id" in rec
         ])
 
-        # Remove recordings with 'Identity unknown'
+        # MAYBE NOT - could use 'Identity unknown' as test data.
+        '''# Remove recordings with 'Identity unknown'
         df = df[df['english_name'] != "Identity unknown"]
         if df.empty:
             print("⚠️ No valid recordings found after filtering.")
-            return
+            return'''
         
         # Combine North Island and South Island species
         df['english_name'] = df['english_name'].str.replace("North Island ", "", regex=False).str.replace("South Island ", "", regex=False)
@@ -147,6 +155,11 @@ class BirdRecordingDownloader:
 
         avg_length = df['length'].mean()
         print(f"\nAverage recording length: {avg_length:.2f} seconds")
+
+        # Number of "Identity unknown" recordings
+        identity_unknown_count = df[df['english_name'] == "Identity unknown"].shape[0]
+        if identity_unknown_count > 0:
+            print(f"\nNumber of 'Identity unknown' recordings: {identity_unknown_count}")
 
         print("\nRecordings by sex:")
         print(df['sex'].value_counts())
@@ -176,7 +189,7 @@ class BirdRecordingDownloader:
         all_recordings = {rec['id']: rec for rec in recordings_song + recordings_call}.values()
 
         #self.download_recordings(all_recordings)
-        #self.save_metadata(all_recordings)
+        self.save_metadata(all_recordings)
         self.report_summary(list(all_recordings))
 
 if __name__ == "__main__":
