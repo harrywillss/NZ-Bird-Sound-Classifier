@@ -1,6 +1,6 @@
 {
     "query": "cnt:\"New Zealand\" grp:\"birds\" type:\"call\" q:\">C\"",
-    "total_recordings": 1553,
+    "total_recordings": 1555,
     "recordings": [
         {
             "id": "955810",
@@ -2548,6 +2548,24 @@
             "sex": "",
             "file_url": "https://xeno-canto.org/33763/download",
             "length": "0:50"
+        },
+        {
+            "id": "1015676",
+            "generic_name": "Prosthemadera",
+            "scientific_name": "novaeseelandiae",
+            "english_name": "Tui",
+            "sex": "uncertain",
+            "file_url": "https://xeno-canto.org/1015676/download",
+            "length": "4:57"
+        },
+        {
+            "id": "1015673",
+            "generic_name": "Prosthemadera",
+            "scientific_name": "novaeseelandiae",
+            "english_name": "Tui",
+            "sex": "uncertain",
+            "file_url": "https://xeno-canto.org/1015673/download",
+            "length": "6:09"
         },
         {
             "id": "961547",

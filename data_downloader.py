@@ -115,6 +115,11 @@ class BirdRecordingDownloader:
         print(f"📁 Metadata saved to {metadata_filename}")
 
         df = pd.DataFrame(metadata["recordings"])
+        # Combine North Island and South Island species
+        df['english_name'] = df['english_name'].str.replace("North Island ", "", regex=False).str.replace("South Island ", "", regex=False)
+
+        # Remove "New Zealand" from species names
+        df['english_name'] = df['english_name'].str.replace("New Zealand ", "", regex=False)
         df.to_csv(csv_filename, index=False)
         print(f"📊 CSV data saved to {csv_filename}")
 

@@ -23,11 +23,12 @@ Planning tot take a LoRA approach to finetuning the model.
 
 - [ ] Training classification models on sound
   - [ ] <https://www.researchgate.net/publication/342055866_Machine_Learning_Approach_to_Classify_Birds_on_the_Basis_of_Their_Sound>
+  - [ ] <https://www.kaggle.com/code/colinnordin/audio-segmentation-tutorial/comments>
 - [ ] Potential models
   - [ ] ViT / ViTHybrid
     - [ ] torchvision.models
     - [ ] <https://huggingface.co/docs/transformers/v4.53.1/en/model_doc/vit_hybrid#transformers.ViTHybridModel>
-    - [ ] google/vit-hybrid-base-bit-384 - <https://huggingface.co/google/vit-hybrid-base-bit-384>
+    - [ ] <https://huggingface.co/google/vit-base-patch16-224>
 - [x] Ways to make the sound interpretable
   - [ ] Mel Spectograms
 

@@ -1,0 +1,145 @@
+Brown Kiwi: 0
+Little Spotted Kiwi: 6
+Black Swan: 1
+Paradise Shelduck: 19
+California Quail: 4
+Pacific Long-tailed Cuckoo: 11
+Shining Bronze Cuckoo: 7
+Spotted Dove: 1
+Lilac-crowned Fruit Dove: 3
+Pacific Imperial Pigeon: 7
+Pigeon: 0
+Chatham Pigeon: 7
+Weka: 23
+Australasian Swamphen: 11
+Takahe: 0
+Baillon's Crake: 1
+Variable Oystercatcher: 17
+Chatham Oystercatcher: 8
+Wrybill: 3
+Plover: 0
+Chatham Snipe: 3
+White-tailed Tropicbird: 8
+Little Penguin: 7
+Yellow-eyed Penguin: 2
+White-faced Storm Petrel: 1
+Buller's Albatross: 7
+Cape Petrel: 7
+Broad-billed Prion: 10
+Fairy Prion: 2
+Fulmar Prion: 2
+Magenta Petrel: 19
+Herald Petrel: 2
+Chatham Petrel: 11
+Grey Petrel: 3
+Westland Petrel: 3
+Sooty Shearwater: 10
+Flesh-footed Shearwater: 8
+Fluttering Shearwater: 5
+South Georgia Diving Petrel: 1
+Common Diving Petrel: 13
+Swamp Harrier: 5
+Morepork: 31
+Sacred Kingfisher: 16
+Kaka: 0
+Yellow-crowned Parakeet: 9
+Red-crowned Parakeet: 25
+Rifleman: 26
+Tui: 163
+Bellbird: 0
+Grey Gerygone: 37
+Chatham Gerygone: 17
+Kokako: 0
+Saddleback: 0
+Saddleback: 0
+Stitchbird: 21
+Australian Magpie: 8
+Yellowhead: 20
+Whitehead: 44
+Pipipi: 13
+Fantail: 0
+Rarotonga Monarch: 28
+Tomtit: 39
+Robin: 0
+Robin: 0
+Black Robin: 18
+Eurasian Skylark: 10
+Cook Reed Warbler: 8
+Fernbird: 0
+Silvereye: 30
+Common Myna: 15
+Common Starling: 5
+Song Thrush: 23
+Common Blackbird: 24
+House Sparrow: 6
+Dunnock: 11
+Pipit: 0
+Common Chaffinch: 25
+European Greenfinch: 5
+Lesser Redpoll: 4
+European Goldfinch: 4
+Yellowhammer: 5
+Soundscape: 7
+Identity unknown: 35
+Okarito Kiwi: 4
+Australasian Shoveler: 1
+Pacific Black Duck: 1
+Mallard: 3
+Grey Teal: 2
+Brown Teal: 1
+Campbell Teal: 3
+Scaup: 0
+Common Pheasant: 3
+Eurasian Coot: 1
+Spotless Crake: 2
+Oystercatcher: 0
+Pied Stilt: 7
+Black Stilt: 7
+Masked Lapwing: 10
+Double-banded Plover: 6
+Shore Dotterel: 6
+Bar-tailed Godwit: 1
+Silver Gull: 14
+Black-billed Gull: 7
+Kelp Gull: 7
+Caspian Tern: 2
+White-fronted Tern: 9
+Antarctic Tern: 1
+Black-fronted Tern: 2
+Red-tailed Tropicbird: 5
+Snares Penguin: 3
+Erect-crested Penguin: 2
+Wandering Albatross: 1
+Antipodean Albatross: 5
+Southern Royal Albatross: 4
+Northern Royal Albatross: 4
+Shy Albatross: 7
+Chatham Albatross: 5
+Salvin's Albatross: 2
+Leach's Storm Petrel: 1
+Northern Giant Petrel: 1
+Grey-faced Petrel: 5
+Soft-plumaged Petrel: 3
+Black-winged Petrel: 3
+Black Petrel: 2
+Hutton's Shearwater: 1
+Little Shearwater: 3
+Australasian Gannet: 1
+Pitt Shag: 7
+Spotted Shag: 4
+King Shag: 0
+Chatham Shag: 10
+White-faced Heron: 1
+Chattering Kingfisher: 4
+Falcon: 0
+Kea: 9
+Eastern Rosella: 3
+Chatham Parakeet: 5
+Malherbe's Parakeet: 1
+Kuhl's Lorikeet: 7
+Blue Lorikeet: 7
+Rockwren: 0
+Kokako: 0
+Welcome Swallow: 5
+Rarotonga Starling: 2
+Common Redpoll: 1

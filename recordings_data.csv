@@ -1,6 +1,6 @@
 id,generic_name,scientific_name,english_name,sex,file_url,length
-955810,Apteryx,mantelli,North Island Brown Kiwi,male,https://xeno-canto.org/955810/download,0:50
-638200,Apteryx,mantelli,North Island Brown Kiwi,,https://xeno-canto.org/638200/download,0:22
+955810,Apteryx,mantelli,Brown Kiwi,male,https://xeno-canto.org/955810/download,0:50
+638200,Apteryx,mantelli,Brown Kiwi,,https://xeno-canto.org/638200/download,0:22
 152944,Apteryx,owenii,Little Spotted Kiwi,male,https://xeno-canto.org/152944/download,0:25
 33754,Apteryx,owenii,Little Spotted Kiwi,,https://xeno-canto.org/33754/download,0:26
 952952,Apteryx,owenii,Little Spotted Kiwi,male,https://xeno-canto.org/952952/download,0:23
@@ -29,8 +29,8 @@ id,generic_name,scientific_name,english_name,sex,file_url,length
 110985,Ducula,pacifica,Pacific Imperial Pigeon,,https://xeno-canto.org/110985/download,0:41
 110984,Ducula,pacifica,Pacific Imperial Pigeon,,https://xeno-canto.org/110984/download,0:06
 110920,Ducula,pacifica,Pacific Imperial Pigeon,,https://xeno-canto.org/110920/download,0:16
-957404,Hemiphaga,novaeseelandiae,New Zealand Pigeon,uncertain,https://xeno-canto.org/957404/download,0:13
-293310,Hemiphaga,novaeseelandiae,New Zealand Pigeon,,https://xeno-canto.org/293310/download,1:30
+957404,Hemiphaga,novaeseelandiae,Pigeon,uncertain,https://xeno-canto.org/957404/download,0:13
+293310,Hemiphaga,novaeseelandiae,Pigeon,,https://xeno-canto.org/293310/download,1:30
 926279,Hemiphaga,chathamensis,Chatham Pigeon,uncertain,https://xeno-canto.org/926279/download,0:38
 708583,Hemiphaga,chathamensis,Chatham Pigeon,male,https://xeno-canto.org/708583/download,0:26
 331534,Hemiphaga,chathamensis,Chatham Pigeon,,https://xeno-canto.org/331534/download,1:00
@@ -48,7 +48,7 @@ id,generic_name,scientific_name,english_name,sex,file_url,length
 88151,Gallirallus,australis,Weka,,https://xeno-canto.org/88151/download,0:13
 958032,Porphyrio,melanotus,Australasian Swamphen,male,https://xeno-canto.org/958032/download,0:21
 958031,Porphyrio,melanotus,Australasian Swamphen,male,https://xeno-canto.org/958031/download,2:05
-344381,Porphyrio,hochstetteri,South Island Takahe,,https://xeno-canto.org/344381/download,0:07
+344381,Porphyrio,hochstetteri,Takahe,,https://xeno-canto.org/344381/download,0:07
 466563,Zapornia,pusilla,Baillon's Crake,,https://xeno-canto.org/466563/download,1:40
 405677,Haematopus,unicolor,Variable Oystercatcher,"female, male",https://xeno-canto.org/405677/download,0:28
 405675,Haematopus,unicolor,Variable Oystercatcher,"female, male",https://xeno-canto.org/405675/download,0:58
@@ -57,7 +57,7 @@ id,generic_name,scientific_name,english_name,sex,file_url,length
 288618,Haematopus,unicolor,Variable Oystercatcher,,https://xeno-canto.org/288618/download,0:14
 821401,Haematopus,chathamensis,Chatham Oystercatcher,"female, male",https://xeno-canto.org/821401/download,0:26
 396170,Anarhynchus,frontalis,Wrybill,,https://xeno-canto.org/396170/download,0:17
-466596,Charadrius,obscurus,New Zealand Plover,,https://xeno-canto.org/466596/download,3:03
+466596,Charadrius,obscurus,Plover,,https://xeno-canto.org/466596/download,3:03
 821411,Coenocorypha,pusilla,Chatham Snipe,uncertain,https://xeno-canto.org/821411/download,0:17
 610822,Coenocorypha,pusilla,Chatham Snipe,,https://xeno-canto.org/610822/download,15:13
 458058,Coenocorypha,pusilla,Chatham Snipe,,https://xeno-canto.org/458058/download,0:17
@@ -157,15 +157,15 @@ id,generic_name,scientific_name,english_name,sex,file_url,length
 207684,Todiramphus,sanctus,Sacred Kingfisher,,https://xeno-canto.org/207684/download,1:22
 207668,Todiramphus,sanctus,Sacred Kingfisher,,https://xeno-canto.org/207668/download,0:43
 207667,Todiramphus,sanctus,Sacred Kingfisher,,https://xeno-canto.org/207667/download,0:41
-963598,Nestor,meridionalis,New Zealand Kaka,male,https://xeno-canto.org/963598/download,0:35
-963596,Nestor,meridionalis,New Zealand Kaka,male,https://xeno-canto.org/963596/download,1:11
-963595,Nestor,meridionalis,New Zealand Kaka,male,https://xeno-canto.org/963595/download,1:06
-959427,Nestor,meridionalis,New Zealand Kaka,male,https://xeno-canto.org/959427/download,0:14
-326938,Nestor,meridionalis,New Zealand Kaka,,https://xeno-canto.org/326938/download,0:33
-962687,Nestor,meridionalis,New Zealand Kaka,uncertain,https://xeno-canto.org/962687/download,1:28
-925377,Nestor,meridionalis,New Zealand Kaka,uncertain,https://xeno-canto.org/925377/download,2:12
-295408,Nestor,meridionalis,New Zealand Kaka,,https://xeno-canto.org/295408/download,1:00
-293133,Nestor,meridionalis,New Zealand Kaka,,https://xeno-canto.org/293133/download,0:48
+963598,Nestor,meridionalis,Kaka,male,https://xeno-canto.org/963598/download,0:35
+963596,Nestor,meridionalis,Kaka,male,https://xeno-canto.org/963596/download,1:11
+963595,Nestor,meridionalis,Kaka,male,https://xeno-canto.org/963595/download,1:06
+959427,Nestor,meridionalis,Kaka,male,https://xeno-canto.org/959427/download,0:14
+326938,Nestor,meridionalis,Kaka,,https://xeno-canto.org/326938/download,0:33
+962687,Nestor,meridionalis,Kaka,uncertain,https://xeno-canto.org/962687/download,1:28
+925377,Nestor,meridionalis,Kaka,uncertain,https://xeno-canto.org/925377/download,2:12
+295408,Nestor,meridionalis,Kaka,,https://xeno-canto.org/295408/download,1:00
+293133,Nestor,meridionalis,Kaka,,https://xeno-canto.org/293133/download,0:48
 962685,Cyanoramphus,auriceps,Yellow-crowned Parakeet,uncertain,https://xeno-canto.org/962685/download,0:38
 288034,Cyanoramphus,auriceps,Yellow-crowned Parakeet,,https://xeno-canto.org/288034/download,0:19
 152298,Cyanoramphus,auriceps,Yellow-crowned Parakeet,,https://xeno-canto.org/152298/download,0:08
@@ -282,6 +282,8 @@ id,generic_name,scientific_name,english_name,sex,file_url,length
 70960,Prosthemadera,novaeseelandiae,Tui,,https://xeno-canto.org/70960/download,0:25
 40495,Prosthemadera,novaeseelandiae,Tui,,https://xeno-canto.org/40495/download,0:09
 33763,Prosthemadera,novaeseelandiae,Tui,,https://xeno-canto.org/33763/download,0:50
+1015676,Prosthemadera,novaeseelandiae,Tui,uncertain,https://xeno-canto.org/1015676/download,4:57
+1015673,Prosthemadera,novaeseelandiae,Tui,uncertain,https://xeno-canto.org/1015673/download,6:09
 961547,Prosthemadera,novaeseelandiae,Tui,uncertain,https://xeno-canto.org/961547/download,0:50
 958022,Prosthemadera,novaeseelandiae,Tui,male,https://xeno-canto.org/958022/download,0:53
 933621,Prosthemadera,novaeseelandiae,Tui,uncertain,https://xeno-canto.org/933621/download,1:22
@@ -324,61 +326,61 @@ id,generic_name,scientific_name,english_name,sex,file_url,length
 207315,Prosthemadera,novaeseelandiae,Tui,,https://xeno-canto.org/207315/download,0:09
 198860,Prosthemadera,novaeseelandiae,Tui,,https://xeno-canto.org/198860/download,0:17
 33764,Prosthemadera,novaeseelandiae,Tui,,https://xeno-canto.org/33764/download,1:58
-959319,Anthornis,melanura,New Zealand Bellbird,uncertain,https://xeno-canto.org/959319/download,1:50
-956723,Anthornis,melanura,New Zealand Bellbird,uncertain,https://xeno-canto.org/956723/download,2:16
-956713,Anthornis,melanura,New Zealand Bellbird,male,https://xeno-canto.org/956713/download,1:46
-956708,Anthornis,melanura,New Zealand Bellbird,male,https://xeno-canto.org/956708/download,1:20
-956637,Anthornis,melanura,New Zealand Bellbird,uncertain,https://xeno-canto.org/956637/download,0:54
-925267,Anthornis,melanura,New Zealand Bellbird,uncertain,https://xeno-canto.org/925267/download,23:40
-925265,Anthornis,melanura,New Zealand Bellbird,uncertain,https://xeno-canto.org/925265/download,11:04
-925263,Anthornis,melanura,New Zealand Bellbird,uncertain,https://xeno-canto.org/925263/download,0:42
-925262,Anthornis,melanura,New Zealand Bellbird,uncertain,https://xeno-canto.org/925262/download,0:37
-925261,Anthornis,melanura,New Zealand Bellbird,uncertain,https://xeno-canto.org/925261/download,0:24
-925259,Anthornis,melanura,New Zealand Bellbird,uncertain,https://xeno-canto.org/925259/download,1:17
-856449,Anthornis,melanura,New Zealand Bellbird,uncertain,https://xeno-canto.org/856449/download,0:54
-843997,Anthornis,melanura,New Zealand Bellbird,uncertain,https://xeno-canto.org/843997/download,3:08
-843994,Anthornis,melanura,New Zealand Bellbird,uncertain,https://xeno-canto.org/843994/download,1:40
-842925,Anthornis,melanura,New Zealand Bellbird,uncertain,https://xeno-canto.org/842925/download,1:35
-842722,Anthornis,melanura,New Zealand Bellbird,uncertain,https://xeno-canto.org/842722/download,0:55
-663169,Anthornis,melanura,New Zealand Bellbird,uncertain,https://xeno-canto.org/663169/download,3:06
-509572,Anthornis,melanura,New Zealand Bellbird,male,https://xeno-canto.org/509572/download,1:31
-506507,Anthornis,melanura,New Zealand Bellbird,,https://xeno-canto.org/506507/download,0:22
-475984,Anthornis,melanura,New Zealand Bellbird,,https://xeno-canto.org/475984/download,1:41
-474021,Anthornis,melanura,New Zealand Bellbird,,https://xeno-canto.org/474021/download,2:28
-428804,Anthornis,melanura,New Zealand Bellbird,,https://xeno-canto.org/428804/download,0:23
-360586,Anthornis,melanura,New Zealand Bellbird,,https://xeno-canto.org/360586/download,0:43
-348789,Anthornis,melanura,New Zealand Bellbird,,https://xeno-canto.org/348789/download,1:21
-348753,Anthornis,melanura,New Zealand Bellbird,,https://xeno-canto.org/348753/download,1:05
-345382,Anthornis,melanura,New Zealand Bellbird,,https://xeno-canto.org/345382/download,0:11
-344384,Anthornis,melanura,New Zealand Bellbird,,https://xeno-canto.org/344384/download,1:03
-293344,Anthornis,melanura,New Zealand Bellbird,,https://xeno-canto.org/293344/download,1:33
-293305,Anthornis,melanura,New Zealand Bellbird,,https://xeno-canto.org/293305/download,1:07
-213409,Anthornis,melanura,New Zealand Bellbird,male,https://xeno-canto.org/213409/download,4:58
-152939,Anthornis,melanura,New Zealand Bellbird,,https://xeno-canto.org/152939/download,0:34
-112821,Anthornis,melanura,New Zealand Bellbird,,https://xeno-canto.org/112821/download,1:15
-96768,Anthornis,melanura,New Zealand Bellbird,,https://xeno-canto.org/96768/download,1:54
-46601,Anthornis,melanura,New Zealand Bellbird,,https://xeno-canto.org/46601/download,0:57
-46600,Anthornis,melanura,New Zealand Bellbird,,https://xeno-canto.org/46600/download,1:27
-40098,Anthornis,melanura,New Zealand Bellbird,,https://xeno-canto.org/40098/download,0:16
-33750,Anthornis,melanura,New Zealand Bellbird,,https://xeno-canto.org/33750/download,1:58
-961717,Anthornis,melanura,New Zealand Bellbird,male,https://xeno-canto.org/961717/download,0:19
-951721,Anthornis,melanura,New Zealand Bellbird,uncertain,https://xeno-canto.org/951721/download,1:13
-893944,Anthornis,melanura,New Zealand Bellbird,uncertain,https://xeno-canto.org/893944/download,0:27
-893943,Anthornis,melanura,New Zealand Bellbird,uncertain,https://xeno-canto.org/893943/download,0:18
-858135,Anthornis,melanura,New Zealand Bellbird,uncertain,https://xeno-canto.org/858135/download,1:03
-855719,Anthornis,melanura,New Zealand Bellbird,uncertain,https://xeno-canto.org/855719/download,2:07
-843988,Anthornis,melanura,New Zealand Bellbird,uncertain,https://xeno-canto.org/843988/download,2:03
-842744,Anthornis,melanura,New Zealand Bellbird,uncertain,https://xeno-canto.org/842744/download,1:12
-842719,Anthornis,melanura,New Zealand Bellbird,uncertain,https://xeno-canto.org/842719/download,1:44
-466570,Anthornis,melanura,New Zealand Bellbird,,https://xeno-canto.org/466570/download,0:14
-451328,Anthornis,melanura,New Zealand Bellbird,,https://xeno-canto.org/451328/download,1:41
-404852,Anthornis,melanura,New Zealand Bellbird,male,https://xeno-canto.org/404852/download,0:40
-345372,Anthornis,melanura,New Zealand Bellbird,,https://xeno-canto.org/345372/download,1:06
-344383,Anthornis,melanura,New Zealand Bellbird,,https://xeno-canto.org/344383/download,1:28
-214879,Anthornis,melanura,New Zealand Bellbird,,https://xeno-canto.org/214879/download,0:27
-206330,Anthornis,melanura,New Zealand Bellbird,,https://xeno-canto.org/206330/download,0:19
-153005,Anthornis,melanura,New Zealand Bellbird,,https://xeno-canto.org/153005/download,2:10
-46586,Anthornis,melanura,New Zealand Bellbird,,https://xeno-canto.org/46586/download,0:36
+959319,Anthornis,melanura,Bellbird,uncertain,https://xeno-canto.org/959319/download,1:50
+956723,Anthornis,melanura,Bellbird,uncertain,https://xeno-canto.org/956723/download,2:16
+956713,Anthornis,melanura,Bellbird,male,https://xeno-canto.org/956713/download,1:46
+956708,Anthornis,melanura,Bellbird,male,https://xeno-canto.org/956708/download,1:20
+956637,Anthornis,melanura,Bellbird,uncertain,https://xeno-canto.org/956637/download,0:54
+925267,Anthornis,melanura,Bellbird,uncertain,https://xeno-canto.org/925267/download,23:40
+925265,Anthornis,melanura,Bellbird,uncertain,https://xeno-canto.org/925265/download,11:04
+925263,Anthornis,melanura,Bellbird,uncertain,https://xeno-canto.org/925263/download,0:42
+925262,Anthornis,melanura,Bellbird,uncertain,https://xeno-canto.org/925262/download,0:37
+925261,Anthornis,melanura,Bellbird,uncertain,https://xeno-canto.org/925261/download,0:24
+925259,Anthornis,melanura,Bellbird,uncertain,https://xeno-canto.org/925259/download,1:17
+856449,Anthornis,melanura,Bellbird,uncertain,https://xeno-canto.org/856449/download,0:54
+843997,Anthornis,melanura,Bellbird,uncertain,https://xeno-canto.org/843997/download,3:08
+843994,Anthornis,melanura,Bellbird,uncertain,https://xeno-canto.org/843994/download,1:40
+842925,Anthornis,melanura,Bellbird,uncertain,https://xeno-canto.org/842925/download,1:35
+842722,Anthornis,melanura,Bellbird,uncertain,https://xeno-canto.org/842722/download,0:55
+663169,Anthornis,melanura,Bellbird,uncertain,https://xeno-canto.org/663169/download,3:06
+509572,Anthornis,melanura,Bellbird,male,https://xeno-canto.org/509572/download,1:31
+506507,Anthornis,melanura,Bellbird,,https://xeno-canto.org/506507/download,0:22
+475984,Anthornis,melanura,Bellbird,,https://xeno-canto.org/475984/download,1:41
+474021,Anthornis,melanura,Bellbird,,https://xeno-canto.org/474021/download,2:28
+428804,Anthornis,melanura,Bellbird,,https://xeno-canto.org/428804/download,0:23
+360586,Anthornis,melanura,Bellbird,,https://xeno-canto.org/360586/download,0:43
+348789,Anthornis,melanura,Bellbird,,https://xeno-canto.org/348789/download,1:21
+348753,Anthornis,melanura,Bellbird,,https://xeno-canto.org/348753/download,1:05
+345382,Anthornis,melanura,Bellbird,,https://xeno-canto.org/345382/download,0:11
+344384,Anthornis,melanura,Bellbird,,https://xeno-canto.org/344384/download,1:03
+293344,Anthornis,melanura,Bellbird,,https://xeno-canto.org/293344/download,1:33
+293305,Anthornis,melanura,Bellbird,,https://xeno-canto.org/293305/download,1:07
+213409,Anthornis,melanura,Bellbird,male,https://xeno-canto.org/213409/download,4:58
+152939,Anthornis,melanura,Bellbird,,https://xeno-canto.org/152939/download,0:34
+112821,Anthornis,melanura,Bellbird,,https://xeno-canto.org/112821/download,1:15
+96768,Anthornis,melanura,Bellbird,,https://xeno-canto.org/96768/download,1:54
+46601,Anthornis,melanura,Bellbird,,https://xeno-canto.org/46601/download,0:57
+46600,Anthornis,melanura,Bellbird,,https://xeno-canto.org/46600/download,1:27
+40098,Anthornis,melanura,Bellbird,,https://xeno-canto.org/40098/download,0:16
+33750,Anthornis,melanura,Bellbird,,https://xeno-canto.org/33750/download,1:58
+961717,Anthornis,melanura,Bellbird,male,https://xeno-canto.org/961717/download,0:19
+951721,Anthornis,melanura,Bellbird,uncertain,https://xeno-canto.org/951721/download,1:13
+893944,Anthornis,melanura,Bellbird,uncertain,https://xeno-canto.org/893944/download,0:27
+893943,Anthornis,melanura,Bellbird,uncertain,https://xeno-canto.org/893943/download,0:18
+858135,Anthornis,melanura,Bellbird,uncertain,https://xeno-canto.org/858135/download,1:03
+855719,Anthornis,melanura,Bellbird,uncertain,https://xeno-canto.org/855719/download,2:07
+843988,Anthornis,melanura,Bellbird,uncertain,https://xeno-canto.org/843988/download,2:03
+842744,Anthornis,melanura,Bellbird,uncertain,https://xeno-canto.org/842744/download,1:12
+842719,Anthornis,melanura,Bellbird,uncertain,https://xeno-canto.org/842719/download,1:44
+466570,Anthornis,melanura,Bellbird,,https://xeno-canto.org/466570/download,0:14
+451328,Anthornis,melanura,Bellbird,,https://xeno-canto.org/451328/download,1:41
+404852,Anthornis,melanura,Bellbird,male,https://xeno-canto.org/404852/download,0:40
+345372,Anthornis,melanura,Bellbird,,https://xeno-canto.org/345372/download,1:06
+344383,Anthornis,melanura,Bellbird,,https://xeno-canto.org/344383/download,1:28
+214879,Anthornis,melanura,Bellbird,,https://xeno-canto.org/214879/download,0:27
+206330,Anthornis,melanura,Bellbird,,https://xeno-canto.org/206330/download,0:19
+153005,Anthornis,melanura,Bellbird,,https://xeno-canto.org/153005/download,2:10
+46586,Anthornis,melanura,Bellbird,,https://xeno-canto.org/46586/download,0:36
 961550,Gerygone,igata,Grey Gerygone,uncertain,https://xeno-canto.org/961550/download,2:24
 961542,Gerygone,igata,Grey Gerygone,uncertain,https://xeno-canto.org/961542/download,1:41
 961537,Gerygone,igata,Grey Gerygone,uncertain,https://xeno-canto.org/961537/download,1:45
@@ -427,46 +429,46 @@ id,generic_name,scientific_name,english_name,sex,file_url,length
 947406,Gerygone,albofrontata,Chatham Gerygone,male,https://xeno-canto.org/947406/download,0:25
 927570,Gerygone,albofrontata,Chatham Gerygone,male,https://xeno-canto.org/927570/download,2:23
 927569,Gerygone,albofrontata,Chatham Gerygone,male,https://xeno-canto.org/927569/download,1:22
-956968,Callaeas,wilsoni,North Island Kokako,male,https://xeno-canto.org/956968/download,3:03
-534282,Callaeas,wilsoni,North Island Kokako,uncertain,https://xeno-canto.org/534282/download,8:52
-534281,Callaeas,wilsoni,North Island Kokako,uncertain,https://xeno-canto.org/534281/download,3:03
-534280,Callaeas,wilsoni,North Island Kokako,uncertain,https://xeno-canto.org/534280/download,2:57
-534279,Callaeas,wilsoni,North Island Kokako,uncertain,https://xeno-canto.org/534279/download,7:44
-893946,Callaeas,wilsoni,North Island Kokako,uncertain,https://xeno-canto.org/893946/download,0:09
-356396,Callaeas,wilsoni,North Island Kokako,,https://xeno-canto.org/356396/download,3:02
-314015,Callaeas,wilsoni,North Island Kokako,"female, male",https://xeno-canto.org/314015/download,0:19
-295412,Callaeas,wilsoni,North Island Kokako,,https://xeno-canto.org/295412/download,2:27
-293317,Callaeas,wilsoni,North Island Kokako,,https://xeno-canto.org/293317/download,1:54
-33753,Callaeas,wilsoni,North Island Kokako,,https://xeno-canto.org/33753/download,1:36
-33752,Callaeas,wilsoni,North Island Kokako,,https://xeno-canto.org/33752/download,1:18
-33715,Callaeas,wilsoni,North Island Kokako,,https://xeno-canto.org/33715/download,1:59
-958847,Philesturnus,rufusater,North Island Saddleback,male,https://xeno-canto.org/958847/download,0:12
-956969,Philesturnus,rufusater,North Island Saddleback,male,https://xeno-canto.org/956969/download,3:53
-956952,Philesturnus,rufusater,North Island Saddleback,male,https://xeno-canto.org/956952/download,4:32
-956701,Philesturnus,rufusater,North Island Saddleback,male,https://xeno-canto.org/956701/download,2:04
-925458,Philesturnus,rufusater,North Island Saddleback,uncertain,https://xeno-canto.org/925458/download,0:21
-925457,Philesturnus,rufusater,North Island Saddleback,,https://xeno-canto.org/925457/download,0:21
-925455,Philesturnus,rufusater,North Island Saddleback,,https://xeno-canto.org/925455/download,1:27
-925454,Philesturnus,rufusater,North Island Saddleback,,https://xeno-canto.org/925454/download,0:13
-794902,Philesturnus,rufusater,North Island Saddleback,uncertain,https://xeno-canto.org/794902/download,0:25
-794892,Philesturnus,rufusater,North Island Saddleback,uncertain,https://xeno-canto.org/794892/download,0:45
-348780,Philesturnus,rufusater,North Island Saddleback,,https://xeno-canto.org/348780/download,0:15
-348779,Philesturnus,rufusater,North Island Saddleback,,https://xeno-canto.org/348779/download,0:10
-114331,Philesturnus,rufusater,North Island Saddleback,,https://xeno-canto.org/114331/download,0:20
-114330,Philesturnus,rufusater,North Island Saddleback,,https://xeno-canto.org/114330/download,0:15
-33757,Philesturnus,rufusater,North Island Saddleback,,https://xeno-canto.org/33757/download,0:04
-925453,Philesturnus,rufusater,North Island Saddleback,,https://xeno-canto.org/925453/download,1:37
-476162,Philesturnus,rufusater,North Island Saddleback,,https://xeno-canto.org/476162/download,0:55
-466584,Philesturnus,rufusater,North Island Saddleback,,https://xeno-canto.org/466584/download,1:15
-293309,Philesturnus,rufusater,North Island Saddleback,,https://xeno-canto.org/293309/download,0:16
-293306,Philesturnus,rufusater,North Island Saddleback,,https://xeno-canto.org/293306/download,1:05
-206331,Philesturnus,rufusater,North Island Saddleback,,https://xeno-canto.org/206331/download,0:12
-112766,Philesturnus,rufusater,North Island Saddleback,,https://xeno-canto.org/112766/download,0:14
-345380,Philesturnus,carunculatus,South Island Saddleback,,https://xeno-canto.org/345380/download,0:19
-473409,Philesturnus,carunculatus,South Island Saddleback,,https://xeno-canto.org/473409/download,1:51
-466568,Philesturnus,carunculatus,South Island Saddleback,,https://xeno-canto.org/466568/download,0:20
-428793,Philesturnus,carunculatus,South Island Saddleback,,https://xeno-canto.org/428793/download,0:16
-288044,Philesturnus,carunculatus,South Island Saddleback,,https://xeno-canto.org/288044/download,0:09
+956968,Callaeas,wilsoni,Kokako,male,https://xeno-canto.org/956968/download,3:03
+534282,Callaeas,wilsoni,Kokako,uncertain,https://xeno-canto.org/534282/download,8:52
+534281,Callaeas,wilsoni,Kokako,uncertain,https://xeno-canto.org/534281/download,3:03
+534280,Callaeas,wilsoni,Kokako,uncertain,https://xeno-canto.org/534280/download,2:57
+534279,Callaeas,wilsoni,Kokako,uncertain,https://xeno-canto.org/534279/download,7:44
+893946,Callaeas,wilsoni,Kokako,uncertain,https://xeno-canto.org/893946/download,0:09
+356396,Callaeas,wilsoni,Kokako,,https://xeno-canto.org/356396/download,3:02
+314015,Callaeas,wilsoni,Kokako,"female, male",https://xeno-canto.org/314015/download,0:19
+295412,Callaeas,wilsoni,Kokako,,https://xeno-canto.org/295412/download,2:27
+293317,Callaeas,wilsoni,Kokako,,https://xeno-canto.org/293317/download,1:54
+33753,Callaeas,wilsoni,Kokako,,https://xeno-canto.org/33753/download,1:36
+33752,Callaeas,wilsoni,Kokako,,https://xeno-canto.org/33752/download,1:18
+33715,Callaeas,wilsoni,Kokako,,https://xeno-canto.org/33715/download,1:59
+958847,Philesturnus,rufusater,Saddleback,male,https://xeno-canto.org/958847/download,0:12
+956969,Philesturnus,rufusater,Saddleback,male,https://xeno-canto.org/956969/download,3:53
+956952,Philesturnus,rufusater,Saddleback,male,https://xeno-canto.org/956952/download,4:32
+956701,Philesturnus,rufusater,Saddleback,male,https://xeno-canto.org/956701/download,2:04
+925458,Philesturnus,rufusater,Saddleback,uncertain,https://xeno-canto.org/925458/download,0:21
+925457,Philesturnus,rufusater,Saddleback,,https://xeno-canto.org/925457/download,0:21
+925455,Philesturnus,rufusater,Saddleback,,https://xeno-canto.org/925455/download,1:27
+925454,Philesturnus,rufusater,Saddleback,,https://xeno-canto.org/925454/download,0:13
+794902,Philesturnus,rufusater,Saddleback,uncertain,https://xeno-canto.org/794902/download,0:25
+794892,Philesturnus,rufusater,Saddleback,uncertain,https://xeno-canto.org/794892/download,0:45
+348780,Philesturnus,rufusater,Saddleback,,https://xeno-canto.org/348780/download,0:15
+348779,Philesturnus,rufusater,Saddleback,,https://xeno-canto.org/348779/download,0:10
+114331,Philesturnus,rufusater,Saddleback,,https://xeno-canto.org/114331/download,0:20
+114330,Philesturnus,rufusater,Saddleback,,https://xeno-canto.org/114330/download,0:15
+33757,Philesturnus,rufusater,Saddleback,,https://xeno-canto.org/33757/download,0:04
+925453,Philesturnus,rufusater,Saddleback,,https://xeno-canto.org/925453/download,1:37
+476162,Philesturnus,rufusater,Saddleback,,https://xeno-canto.org/476162/download,0:55
+466584,Philesturnus,rufusater,Saddleback,,https://xeno-canto.org/466584/download,1:15
+293309,Philesturnus,rufusater,Saddleback,,https://xeno-canto.org/293309/download,0:16
+293306,Philesturnus,rufusater,Saddleback,,https://xeno-canto.org/293306/download,1:05
+206331,Philesturnus,rufusater,Saddleback,,https://xeno-canto.org/206331/download,0:12
+112766,Philesturnus,rufusater,Saddleback,,https://xeno-canto.org/112766/download,0:14
+345380,Philesturnus,carunculatus,Saddleback,,https://xeno-canto.org/345380/download,0:19
+473409,Philesturnus,carunculatus,Saddleback,,https://xeno-canto.org/473409/download,1:51
+466568,Philesturnus,carunculatus,Saddleback,,https://xeno-canto.org/466568/download,0:20
+428793,Philesturnus,carunculatus,Saddleback,,https://xeno-canto.org/428793/download,0:16
+288044,Philesturnus,carunculatus,Saddleback,,https://xeno-canto.org/288044/download,0:09
 959023,Notiomystis,cincta,Stitchbird,uncertain,https://xeno-canto.org/959023/download,1:57
 958863,Notiomystis,cincta,Stitchbird,female,https://xeno-canto.org/958863/download,0:39
 958862,Notiomystis,cincta,Stitchbird,uncertain,https://xeno-canto.org/958862/download,0:56
@@ -537,37 +539,37 @@ id,generic_name,scientific_name,english_name,sex,file_url,length
 207332,Mohoua,novaeseelandiae,Pipipi,,https://xeno-canto.org/207332/download,0:10
 198857,Mohoua,novaeseelandiae,Pipipi,,https://xeno-canto.org/198857/download,1:24
 75781,Mohoua,novaeseelandiae,Pipipi,,https://xeno-canto.org/75781/download,0:58
-984431,Rhipidura,fuliginosa,New Zealand Fantail,uncertain,https://xeno-canto.org/984431/download,0:40
-960530,Rhipidura,fuliginosa,New Zealand Fantail,male,https://xeno-canto.org/960530/download,3:24
-959695,Rhipidura,fuliginosa,New Zealand Fantail,uncertain,https://xeno-canto.org/959695/download,2:10
-959523,Rhipidura,fuliginosa,New Zealand Fantail,uncertain,https://xeno-canto.org/959523/download,1:02
-959471,Rhipidura,fuliginosa,New Zealand Fantail,uncertain,https://xeno-canto.org/959471/download,0:42
-959470,Rhipidura,fuliginosa,New Zealand Fantail,uncertain,https://xeno-canto.org/959470/download,0:40
-958042,Rhipidura,fuliginosa,New Zealand Fantail,male,https://xeno-canto.org/958042/download,3:10
-956685,Rhipidura,fuliginosa,New Zealand Fantail,uncertain,https://xeno-canto.org/956685/download,1:07
-956326,Rhipidura,fuliginosa,New Zealand Fantail,male,https://xeno-canto.org/956326/download,0:11
-947410,Rhipidura,fuliginosa,New Zealand Fantail,uncertain,https://xeno-canto.org/947410/download,0:17
-405679,Rhipidura,fuliginosa,New Zealand Fantail,,https://xeno-canto.org/405679/download,0:56
-403123,Rhipidura,fuliginosa,New Zealand Fantail,,https://xeno-canto.org/403123/download,1:26
-348759,Rhipidura,fuliginosa,New Zealand Fantail,,https://xeno-canto.org/348759/download,1:17
-236295,Rhipidura,fuliginosa,New Zealand Fantail,,https://xeno-canto.org/236295/download,0:17
-962683,Rhipidura,fuliginosa,New Zealand Fantail,uncertain,https://xeno-canto.org/962683/download,0:36
-962317,Rhipidura,fuliginosa,New Zealand Fantail,uncertain,https://xeno-canto.org/962317/download,0:08
-959525,Rhipidura,fuliginosa,New Zealand Fantail,uncertain,https://xeno-canto.org/959525/download,0:46
-956325,Rhipidura,fuliginosa,New Zealand Fantail,male,https://xeno-canto.org/956325/download,1:09
-926860,Rhipidura,fuliginosa,New Zealand Fantail,uncertain,https://xeno-canto.org/926860/download,0:36
-926859,Rhipidura,fuliginosa,New Zealand Fantail,uncertain,https://xeno-canto.org/926859/download,0:15
-926858,Rhipidura,fuliginosa,New Zealand Fantail,uncertain,https://xeno-canto.org/926858/download,6:28
-533642,Rhipidura,fuliginosa,New Zealand Fantail,,https://xeno-canto.org/533642/download,1:04
-476167,Rhipidura,fuliginosa,New Zealand Fantail,,https://xeno-canto.org/476167/download,0:28
-295410,Rhipidura,fuliginosa,New Zealand Fantail,,https://xeno-canto.org/295410/download,1:21
-293153,Rhipidura,fuliginosa,New Zealand Fantail,,https://xeno-canto.org/293153/download,0:54
-207342,Rhipidura,fuliginosa,New Zealand Fantail,,https://xeno-canto.org/207342/download,0:17
-207333,Rhipidura,fuliginosa,New Zealand Fantail,,https://xeno-canto.org/207333/download,0:16
-207314,Rhipidura,fuliginosa,New Zealand Fantail,,https://xeno-canto.org/207314/download,0:31
-198868,Rhipidura,fuliginosa,New Zealand Fantail,,https://xeno-canto.org/198868/download,1:38
-152997,Rhipidura,fuliginosa,New Zealand Fantail,,https://xeno-canto.org/152997/download,0:34
-46595,Rhipidura,fuliginosa,New Zealand Fantail,,https://xeno-canto.org/46595/download,1:01
+984431,Rhipidura,fuliginosa,Fantail,uncertain,https://xeno-canto.org/984431/download,0:40
+960530,Rhipidura,fuliginosa,Fantail,male,https://xeno-canto.org/960530/download,3:24
+959695,Rhipidura,fuliginosa,Fantail,uncertain,https://xeno-canto.org/959695/download,2:10
+959523,Rhipidura,fuliginosa,Fantail,uncertain,https://xeno-canto.org/959523/download,1:02
+959471,Rhipidura,fuliginosa,Fantail,uncertain,https://xeno-canto.org/959471/download,0:42
+959470,Rhipidura,fuliginosa,Fantail,uncertain,https://xeno-canto.org/959470/download,0:40
+958042,Rhipidura,fuliginosa,Fantail,male,https://xeno-canto.org/958042/download,3:10
+956685,Rhipidura,fuliginosa,Fantail,uncertain,https://xeno-canto.org/956685/download,1:07
+956326,Rhipidura,fuliginosa,Fantail,male,https://xeno-canto.org/956326/download,0:11
+947410,Rhipidura,fuliginosa,Fantail,uncertain,https://xeno-canto.org/947410/download,0:17
+405679,Rhipidura,fuliginosa,Fantail,,https://xeno-canto.org/405679/download,0:56
+403123,Rhipidura,fuliginosa,Fantail,,https://xeno-canto.org/403123/download,1:26
+348759,Rhipidura,fuliginosa,Fantail,,https://xeno-canto.org/348759/download,1:17
+236295,Rhipidura,fuliginosa,Fantail,,https://xeno-canto.org/236295/download,0:17
+962683,Rhipidura,fuliginosa,Fantail,uncertain,https://xeno-canto.org/962683/download,0:36
+962317,Rhipidura,fuliginosa,Fantail,uncertain,https://xeno-canto.org/962317/download,0:08
+959525,Rhipidura,fuliginosa,Fantail,uncertain,https://xeno-canto.org/959525/download,0:46
+956325,Rhipidura,fuliginosa,Fantail,male,https://xeno-canto.org/956325/download,1:09
+926860,Rhipidura,fuliginosa,Fantail,uncertain,https://xeno-canto.org/926860/download,0:36
+926859,Rhipidura,fuliginosa,Fantail,uncertain,https://xeno-canto.org/926859/download,0:15
+926858,Rhipidura,fuliginosa,Fantail,uncertain,https://xeno-canto.org/926858/download,6:28
+533642,Rhipidura,fuliginosa,Fantail,,https://xeno-canto.org/533642/download,1:04
+476167,Rhipidura,fuliginosa,Fantail,,https://xeno-canto.org/476167/download,0:28
+295410,Rhipidura,fuliginosa,Fantail,,https://xeno-canto.org/295410/download,1:21
+293153,Rhipidura,fuliginosa,Fantail,,https://xeno-canto.org/293153/download,0:54
+207342,Rhipidura,fuliginosa,Fantail,,https://xeno-canto.org/207342/download,0:17
+207333,Rhipidura,fuliginosa,Fantail,,https://xeno-canto.org/207333/download,0:16
+207314,Rhipidura,fuliginosa,Fantail,,https://xeno-canto.org/207314/download,0:31
+198868,Rhipidura,fuliginosa,Fantail,,https://xeno-canto.org/198868/download,1:38
+152997,Rhipidura,fuliginosa,Fantail,,https://xeno-canto.org/152997/download,0:34
+46595,Rhipidura,fuliginosa,Fantail,,https://xeno-canto.org/46595/download,1:01
 363284,Pomarea,dimidiata,Rarotonga Monarch,,https://xeno-canto.org/363284/download,1:32
 363283,Pomarea,dimidiata,Rarotonga Monarch,,https://xeno-canto.org/363283/download,3:22
 363282,Pomarea,dimidiata,Rarotonga Monarch,,https://xeno-canto.org/363282/download,2:26
@@ -600,39 +602,39 @@ id,generic_name,scientific_name,english_name,sex,file_url,length
 207000,Petroica,macrocephala,Tomtit,,https://xeno-canto.org/207000/download,0:22
 206995,Petroica,macrocephala,Tomtit,,https://xeno-canto.org/206995/download,0:21
 75790,Petroica,macrocephala,Tomtit,,https://xeno-canto.org/75790/download,0:42
-960637,Petroica,longipes,North Island Robin,male,https://xeno-canto.org/960637/download,2:08
-959433,Petroica,longipes,North Island Robin,uncertain,https://xeno-canto.org/959433/download,2:28
-959432,Petroica,longipes,North Island Robin,uncertain,https://xeno-canto.org/959432/download,1:11
-959430,Petroica,longipes,North Island Robin,male,https://xeno-canto.org/959430/download,3:09
-959318,Petroica,longipes,North Island Robin,uncertain,https://xeno-canto.org/959318/download,1:46
-959290,Petroica,longipes,North Island Robin,uncertain,https://xeno-canto.org/959290/download,2:09
-474058,Petroica,longipes,North Island Robin,,https://xeno-canto.org/474058/download,1:49
-474049,Petroica,longipes,North Island Robin,,https://xeno-canto.org/474049/download,1:13
-474043,Petroica,longipes,North Island Robin,,https://xeno-canto.org/474043/download,1:48
-436726,Petroica,longipes,North Island Robin,,https://xeno-canto.org/436726/download,0:34
-348784,Petroica,longipes,North Island Robin,,https://xeno-canto.org/348784/download,1:29
-348754,Petroica,longipes,North Island Robin,,https://xeno-canto.org/348754/download,1:25
-344825,Petroica,longipes,North Island Robin,,https://xeno-canto.org/344825/download,2:11
-152940,Petroica,longipes,North Island Robin,,https://xeno-canto.org/152940/download,0:46
-114332,Petroica,longipes,North Island Robin,,https://xeno-canto.org/114332/download,0:36
-33755,Petroica,longipes,North Island Robin,,https://xeno-canto.org/33755/download,1:08
-960633,Petroica,longipes,North Island Robin,male,https://xeno-canto.org/960633/download,2:51
-892547,Petroica,longipes,North Island Robin,uncertain,https://xeno-canto.org/892547/download,0:09
-843614,Petroica,longipes,North Island Robin,uncertain,https://xeno-canto.org/843614/download,2:43
-341679,Petroica,longipes,North Island Robin,,https://xeno-canto.org/341679/download,2:09
-293114,Petroica,longipes,North Island Robin,,https://xeno-canto.org/293114/download,1:43
-206322,Petroica,longipes,North Island Robin,,https://xeno-canto.org/206322/download,1:08
-842721,Petroica,australis,South Island Robin,male,https://xeno-canto.org/842721/download,3:35
-500859,Petroica,australis,South Island Robin,,https://xeno-canto.org/500859/download,0:53
-500858,Petroica,australis,South Island Robin,,https://xeno-canto.org/500858/download,0:43
-500856,Petroica,australis,South Island Robin,,https://xeno-canto.org/500856/download,1:41
-114334,Petroica,australis,South Island Robin,,https://xeno-canto.org/114334/download,1:10
-112820,Petroica,australis,South Island Robin,,https://xeno-canto.org/112820/download,1:06
-33769,Petroica,australis,South Island Robin,,https://xeno-canto.org/33769/download,0:20
-842720,Petroica,australis,South Island Robin,uncertain,https://xeno-canto.org/842720/download,2:38
-288040,Petroica,australis,South Island Robin,,https://xeno-canto.org/288040/download,0:22
-207331,Petroica,australis,South Island Robin,,https://xeno-canto.org/207331/download,1:16
-75779,Petroica,australis,South Island Robin,,https://xeno-canto.org/75779/download,0:42
+960637,Petroica,longipes,Robin,male,https://xeno-canto.org/960637/download,2:08
+959433,Petroica,longipes,Robin,uncertain,https://xeno-canto.org/959433/download,2:28
+959432,Petroica,longipes,Robin,uncertain,https://xeno-canto.org/959432/download,1:11
+959430,Petroica,longipes,Robin,male,https://xeno-canto.org/959430/download,3:09
+959318,Petroica,longipes,Robin,uncertain,https://xeno-canto.org/959318/download,1:46
+959290,Petroica,longipes,Robin,uncertain,https://xeno-canto.org/959290/download,2:09
+474058,Petroica,longipes,Robin,,https://xeno-canto.org/474058/download,1:49
+474049,Petroica,longipes,Robin,,https://xeno-canto.org/474049/download,1:13
+474043,Petroica,longipes,Robin,,https://xeno-canto.org/474043/download,1:48
+436726,Petroica,longipes,Robin,,https://xeno-canto.org/436726/download,0:34
+348784,Petroica,longipes,Robin,,https://xeno-canto.org/348784/download,1:29
+348754,Petroica,longipes,Robin,,https://xeno-canto.org/348754/download,1:25
+344825,Petroica,longipes,Robin,,https://xeno-canto.org/344825/download,2:11
+152940,Petroica,longipes,Robin,,https://xeno-canto.org/152940/download,0:46
+114332,Petroica,longipes,Robin,,https://xeno-canto.org/114332/download,0:36
+33755,Petroica,longipes,Robin,,https://xeno-canto.org/33755/download,1:08
+960633,Petroica,longipes,Robin,male,https://xeno-canto.org/960633/download,2:51
+892547,Petroica,longipes,Robin,uncertain,https://xeno-canto.org/892547/download,0:09
+843614,Petroica,longipes,Robin,uncertain,https://xeno-canto.org/843614/download,2:43
+341679,Petroica,longipes,Robin,,https://xeno-canto.org/341679/download,2:09
+293114,Petroica,longipes,Robin,,https://xeno-canto.org/293114/download,1:43
+206322,Petroica,longipes,Robin,,https://xeno-canto.org/206322/download,1:08
+842721,Petroica,australis,Robin,male,https://xeno-canto.org/842721/download,3:35
+500859,Petroica,australis,Robin,,https://xeno-canto.org/500859/download,0:53
+500858,Petroica,australis,Robin,,https://xeno-canto.org/500858/download,0:43
+500856,Petroica,australis,Robin,,https://xeno-canto.org/500856/download,1:41
+114334,Petroica,australis,Robin,,https://xeno-canto.org/114334/download,1:10
+112820,Petroica,australis,Robin,,https://xeno-canto.org/112820/download,1:06
+33769,Petroica,australis,Robin,,https://xeno-canto.org/33769/download,0:20
+842720,Petroica,australis,Robin,uncertain,https://xeno-canto.org/842720/download,2:38
+288040,Petroica,australis,Robin,,https://xeno-canto.org/288040/download,0:22
+207331,Petroica,australis,Robin,,https://xeno-canto.org/207331/download,1:16
+75779,Petroica,australis,Robin,,https://xeno-canto.org/75779/download,0:42
 537859,Petroica,traversi,Black Robin,,https://xeno-canto.org/537859/download,0:10
 537850,Petroica,traversi,Black Robin,,https://xeno-canto.org/537850/download,0:40
 974883,Alauda,arvensis,Eurasian Skylark,male,https://xeno-canto.org/974883/download,1:15
@@ -651,23 +653,23 @@ id,generic_name,scientific_name,english_name,sex,file_url,length
 363274,Acrocephalus,kerearako,Cook Reed Warbler,,https://xeno-canto.org/363274/download,2:30
 363273,Acrocephalus,kerearako,Cook Reed Warbler,,https://xeno-canto.org/363273/download,2:40
 363272,Acrocephalus,kerearako,Cook Reed Warbler,,https://xeno-canto.org/363272/download,1:04
-543012,Poodytes,punctatus,New Zealand Fernbird,,https://xeno-canto.org/543012/download,0:34
-466565,Poodytes,punctatus,New Zealand Fernbird,,https://xeno-canto.org/466565/download,1:21
-405487,Poodytes,punctatus,New Zealand Fernbird,,https://xeno-canto.org/405487/download,1:39
-405479,Poodytes,punctatus,New Zealand Fernbird,,https://xeno-canto.org/405479/download,0:53
-925276,Poodytes,punctatus,New Zealand Fernbird,uncertain,https://xeno-canto.org/925276/download,0:21
-925275,Poodytes,punctatus,New Zealand Fernbird,uncertain,https://xeno-canto.org/925275/download,2:08
-776944,Poodytes,punctatus,New Zealand Fernbird,,https://xeno-canto.org/776944/download,0:09
-776943,Poodytes,punctatus,New Zealand Fernbird,,https://xeno-canto.org/776943/download,0:32
-776942,Poodytes,punctatus,New Zealand Fernbird,,https://xeno-canto.org/776942/download,0:32
-776941,Poodytes,punctatus,New Zealand Fernbird,,https://xeno-canto.org/776941/download,0:41
-776940,Poodytes,punctatus,New Zealand Fernbird,,https://xeno-canto.org/776940/download,0:30
-776939,Poodytes,punctatus,New Zealand Fernbird,,https://xeno-canto.org/776939/download,0:35
-776938,Poodytes,punctatus,New Zealand Fernbird,,https://xeno-canto.org/776938/download,0:53
-776937,Poodytes,punctatus,New Zealand Fernbird,,https://xeno-canto.org/776937/download,0:14
-405125,Poodytes,punctatus,New Zealand Fernbird,,https://xeno-canto.org/405125/download,0:53
-293107,Poodytes,punctatus,New Zealand Fernbird,,https://xeno-canto.org/293107/download,0:39
-206475,Poodytes,punctatus,New Zealand Fernbird,,https://xeno-canto.org/206475/download,0:14
+543012,Poodytes,punctatus,Fernbird,,https://xeno-canto.org/543012/download,0:34
+466565,Poodytes,punctatus,Fernbird,,https://xeno-canto.org/466565/download,1:21
+405487,Poodytes,punctatus,Fernbird,,https://xeno-canto.org/405487/download,1:39
+405479,Poodytes,punctatus,Fernbird,,https://xeno-canto.org/405479/download,0:53
+925276,Poodytes,punctatus,Fernbird,uncertain,https://xeno-canto.org/925276/download,0:21
+925275,Poodytes,punctatus,Fernbird,uncertain,https://xeno-canto.org/925275/download,2:08
+776944,Poodytes,punctatus,Fernbird,,https://xeno-canto.org/776944/download,0:09
+776943,Poodytes,punctatus,Fernbird,,https://xeno-canto.org/776943/download,0:32
+776942,Poodytes,punctatus,Fernbird,,https://xeno-canto.org/776942/download,0:32
+776941,Poodytes,punctatus,Fernbird,,https://xeno-canto.org/776941/download,0:41
+776940,Poodytes,punctatus,Fernbird,,https://xeno-canto.org/776940/download,0:30
+776939,Poodytes,punctatus,Fernbird,,https://xeno-canto.org/776939/download,0:35
+776938,Poodytes,punctatus,Fernbird,,https://xeno-canto.org/776938/download,0:53
+776937,Poodytes,punctatus,Fernbird,,https://xeno-canto.org/776937/download,0:14
+405125,Poodytes,punctatus,Fernbird,,https://xeno-canto.org/405125/download,0:53
+293107,Poodytes,punctatus,Fernbird,,https://xeno-canto.org/293107/download,0:39
+206475,Poodytes,punctatus,Fernbird,,https://xeno-canto.org/206475/download,0:14
 963604,Zosterops,lateralis,Silvereye,male,https://xeno-canto.org/963604/download,1:10
 962316,Zosterops,lateralis,Silvereye,uncertain,https://xeno-canto.org/962316/download,0:52
 962315,Zosterops,lateralis,Silvereye,uncertain,https://xeno-canto.org/962315/download,2:16
@@ -745,19 +747,19 @@ id,generic_name,scientific_name,english_name,sex,file_url,length
 198197,Prunella,modularis,Dunnock,,https://xeno-canto.org/198197/download,0:20
 152945,Prunella,modularis,Dunnock,male,https://xeno-canto.org/152945/download,1:24
 121573,Prunella,modularis,Dunnock,,https://xeno-canto.org/121573/download,0:34
-973177,Anthus,novaeseelandiae,New Zealand Pipit,male,https://xeno-canto.org/973177/download,0:19
-973176,Anthus,novaeseelandiae,New Zealand Pipit,male,https://xeno-canto.org/973176/download,0:30
-973175,Anthus,novaeseelandiae,New Zealand Pipit,male,https://xeno-canto.org/973175/download,0:31
-957622,Anthus,novaeseelandiae,New Zealand Pipit,male,https://xeno-canto.org/957622/download,3:23
-343599,Anthus,novaeseelandiae,New Zealand Pipit,,https://xeno-canto.org/343599/download,3:04
-343598,Anthus,novaeseelandiae,New Zealand Pipit,,https://xeno-canto.org/343598/download,1:48
-343597,Anthus,novaeseelandiae,New Zealand Pipit,,https://xeno-canto.org/343597/download,0:35
-956327,Anthus,novaeseelandiae,New Zealand Pipit,male,https://xeno-canto.org/956327/download,0:39
-938290,Anthus,novaeseelandiae,New Zealand Pipit,male,https://xeno-canto.org/938290/download,1:08
-927164,Anthus,novaeseelandiae,New Zealand Pipit,male,https://xeno-canto.org/927164/download,0:19
-395994,Anthus,novaeseelandiae,New Zealand Pipit,,https://xeno-canto.org/395994/download,0:37
-395993,Anthus,novaeseelandiae,New Zealand Pipit,,https://xeno-canto.org/395993/download,0:14
-293102,Anthus,novaeseelandiae,New Zealand Pipit,,https://xeno-canto.org/293102/download,1:14
+973177,Anthus,novaeseelandiae,Pipit,male,https://xeno-canto.org/973177/download,0:19
+973176,Anthus,novaeseelandiae,Pipit,male,https://xeno-canto.org/973176/download,0:30
+973175,Anthus,novaeseelandiae,Pipit,male,https://xeno-canto.org/973175/download,0:31
+957622,Anthus,novaeseelandiae,Pipit,male,https://xeno-canto.org/957622/download,3:23
+343599,Anthus,novaeseelandiae,Pipit,,https://xeno-canto.org/343599/download,3:04
+343598,Anthus,novaeseelandiae,Pipit,,https://xeno-canto.org/343598/download,1:48
+343597,Anthus,novaeseelandiae,Pipit,,https://xeno-canto.org/343597/download,0:35
+956327,Anthus,novaeseelandiae,Pipit,male,https://xeno-canto.org/956327/download,0:39
+938290,Anthus,novaeseelandiae,Pipit,male,https://xeno-canto.org/938290/download,1:08
+927164,Anthus,novaeseelandiae,Pipit,male,https://xeno-canto.org/927164/download,0:19
+395994,Anthus,novaeseelandiae,Pipit,,https://xeno-canto.org/395994/download,0:37
+395993,Anthus,novaeseelandiae,Pipit,,https://xeno-canto.org/395993/download,0:14
+293102,Anthus,novaeseelandiae,Pipit,,https://xeno-canto.org/293102/download,1:14
 961538,Fringilla,coelebs,Common Chaffinch,uncertain,https://xeno-canto.org/961538/download,0:27
 923706,Fringilla,coelebs,Common Chaffinch,male,https://xeno-canto.org/923706/download,1:19
 513044,Fringilla,coelebs,Common Chaffinch,,https://xeno-canto.org/513044/download,1:42
@@ -797,22 +799,22 @@ id,generic_name,scientific_name,english_name,sex,file_url,length
 956534,Mystery,mystery,Identity unknown,male,https://xeno-canto.org/956534/download,2:46
 506525,Mystery,mystery,Identity unknown,,https://xeno-canto.org/506525/download,0:20
 961718,Mystery,mystery,Identity unknown,male,https://xeno-canto.org/961718/download,0:15
-794785,Apteryx,mantelli,North Island Brown Kiwi,male,https://xeno-canto.org/794785/download,0:26
-668545,Apteryx,mantelli,North Island Brown Kiwi,male,https://xeno-canto.org/668545/download,0:35
-526191,Apteryx,mantelli,North Island Brown Kiwi,,https://xeno-canto.org/526191/download,0:20
-526190,Apteryx,mantelli,North Island Brown Kiwi,,https://xeno-canto.org/526190/download,0:14
-526189,Apteryx,mantelli,North Island Brown Kiwi,,https://xeno-canto.org/526189/download,0:30
-521536,Apteryx,mantelli,North Island Brown Kiwi,female,https://xeno-canto.org/521536/download,0:35
-794786,Apteryx,mantelli,North Island Brown Kiwi,"female, male",https://xeno-canto.org/794786/download,0:25
-526192,Apteryx,mantelli,North Island Brown Kiwi,,https://xeno-canto.org/526192/download,0:10
-526188,Apteryx,mantelli,North Island Brown Kiwi,,https://xeno-canto.org/526188/download,0:20
-526186,Apteryx,mantelli,North Island Brown Kiwi,,https://xeno-canto.org/526186/download,0:09
-526185,Apteryx,mantelli,North Island Brown Kiwi,,https://xeno-canto.org/526185/download,0:18
-526184,Apteryx,mantelli,North Island Brown Kiwi,,https://xeno-canto.org/526184/download,0:37
-521538,Apteryx,mantelli,North Island Brown Kiwi,"female, male",https://xeno-canto.org/521538/download,1:02
-521537,Apteryx,mantelli,North Island Brown Kiwi,"female, male",https://xeno-canto.org/521537/download,0:52
-521535,Apteryx,mantelli,North Island Brown Kiwi,male,https://xeno-canto.org/521535/download,0:32
-348749,Apteryx,mantelli,North Island Brown Kiwi,male,https://xeno-canto.org/348749/download,0:20
+794785,Apteryx,mantelli,Brown Kiwi,male,https://xeno-canto.org/794785/download,0:26
+668545,Apteryx,mantelli,Brown Kiwi,male,https://xeno-canto.org/668545/download,0:35
+526191,Apteryx,mantelli,Brown Kiwi,,https://xeno-canto.org/526191/download,0:20
+526190,Apteryx,mantelli,Brown Kiwi,,https://xeno-canto.org/526190/download,0:14
+526189,Apteryx,mantelli,Brown Kiwi,,https://xeno-canto.org/526189/download,0:30
+521536,Apteryx,mantelli,Brown Kiwi,female,https://xeno-canto.org/521536/download,0:35
+794786,Apteryx,mantelli,Brown Kiwi,"female, male",https://xeno-canto.org/794786/download,0:25
+526192,Apteryx,mantelli,Brown Kiwi,,https://xeno-canto.org/526192/download,0:10
+526188,Apteryx,mantelli,Brown Kiwi,,https://xeno-canto.org/526188/download,0:20
+526186,Apteryx,mantelli,Brown Kiwi,,https://xeno-canto.org/526186/download,0:09
+526185,Apteryx,mantelli,Brown Kiwi,,https://xeno-canto.org/526185/download,0:18
+526184,Apteryx,mantelli,Brown Kiwi,,https://xeno-canto.org/526184/download,0:37
+521538,Apteryx,mantelli,Brown Kiwi,"female, male",https://xeno-canto.org/521538/download,1:02
+521537,Apteryx,mantelli,Brown Kiwi,"female, male",https://xeno-canto.org/521537/download,0:52
+521535,Apteryx,mantelli,Brown Kiwi,male,https://xeno-canto.org/521535/download,0:32
+348749,Apteryx,mantelli,Brown Kiwi,male,https://xeno-canto.org/348749/download,0:20
 356323,Apteryx,rowi,Okarito Kiwi,,https://xeno-canto.org/356323/download,0:19
 356322,Apteryx,rowi,Okarito Kiwi,,https://xeno-canto.org/356322/download,0:23
 356321,Apteryx,rowi,Okarito Kiwi,,https://xeno-canto.org/356321/download,0:17
@@ -846,7 +848,7 @@ id,generic_name,scientific_name,english_name,sex,file_url,length
 396542,Anas,nesiotis,Campbell Teal,"female, male",https://xeno-canto.org/396542/download,0:40
 396459,Anas,nesiotis,Campbell Teal,male,https://xeno-canto.org/396459/download,0:09
 295658,Anas,nesiotis,Campbell Teal,,https://xeno-canto.org/295658/download,0:07
-198201,Aythya,novaeseelandiae,New Zealand Scaup,,https://xeno-canto.org/198201/download,0:12
+198201,Aythya,novaeseelandiae,Scaup,,https://xeno-canto.org/198201/download,0:12
 962334,Callipepla,californica,California Quail,male,https://xeno-canto.org/962334/download,0:47
 206336,Callipepla,californica,California Quail,,https://xeno-canto.org/206336/download,0:18
 957124,Phasianus,colchicus,Common Pheasant,uncertain,https://xeno-canto.org/957124/download,2:00
@@ -863,10 +865,10 @@ id,generic_name,scientific_name,english_name,sex,file_url,length
 110951,Ducula,pacifica,Pacific Imperial Pigeon,male,https://xeno-canto.org/110951/download,0:12
 110967,Ducula,pacifica,Pacific Imperial Pigeon,,https://xeno-canto.org/110967/download,0:36
 110922,Ducula,pacifica,Pacific Imperial Pigeon,,https://xeno-canto.org/110922/download,0:09
-957125,Hemiphaga,novaeseelandiae,New Zealand Pigeon,uncertain,https://xeno-canto.org/957125/download,0:26
-933702,Hemiphaga,novaeseelandiae,New Zealand Pigeon,uncertain,https://xeno-canto.org/933702/download,0:44
-378290,Hemiphaga,novaeseelandiae,New Zealand Pigeon,,https://xeno-canto.org/378290/download,2:00
-207658,Hemiphaga,novaeseelandiae,New Zealand Pigeon,,https://xeno-canto.org/207658/download,0:16
+957125,Hemiphaga,novaeseelandiae,Pigeon,uncertain,https://xeno-canto.org/957125/download,0:26
+933702,Hemiphaga,novaeseelandiae,Pigeon,uncertain,https://xeno-canto.org/933702/download,0:44
+378290,Hemiphaga,novaeseelandiae,Pigeon,,https://xeno-canto.org/378290/download,2:00
+207658,Hemiphaga,novaeseelandiae,Pigeon,,https://xeno-canto.org/207658/download,0:16
 947411,Hemiphaga,chathamensis,Chatham Pigeon,uncertain,https://xeno-canto.org/947411/download,0:11
 978435,Gallirallus,australis,Weka,uncertain,https://xeno-canto.org/978435/download,0:25
 962322,Gallirallus,australis,Weka,uncertain,https://xeno-canto.org/962322/download,0:15
@@ -892,15 +894,15 @@ id,generic_name,scientific_name,english_name,sex,file_url,length
 293349,Porphyrio,melanotus,Australasian Swamphen,,https://xeno-canto.org/293349/download,1:13
 207680,Porphyrio,melanotus,Australasian Swamphen,,https://xeno-canto.org/207680/download,1:02
 123246,Porphyrio,melanotus,Australasian Swamphen,,https://xeno-canto.org/123246/download,0:26
-500837,Porphyrio,hochstetteri,South Island Takahe,,https://xeno-canto.org/500837/download,0:32
-214590,Porphyrio,hochstetteri,South Island Takahe,,https://xeno-canto.org/214590/download,0:56
+500837,Porphyrio,hochstetteri,Takahe,,https://xeno-canto.org/500837/download,0:32
+214590,Porphyrio,hochstetteri,Takahe,,https://xeno-canto.org/214590/download,0:56
 838811,Zapornia,tabuensis,Spotless Crake,uncertain,https://xeno-canto.org/838811/download,1:04
 344436,Zapornia,tabuensis,Spotless Crake,,https://xeno-canto.org/344436/download,0:48
-345376,Haematopus,finschi,South Island Oystercatcher,,https://xeno-canto.org/345376/download,1:05
-46627,Haematopus,finschi,South Island Oystercatcher,,https://xeno-canto.org/46627/download,0:33
-46623,Haematopus,finschi,South Island Oystercatcher,,https://xeno-canto.org/46623/download,0:17
-46622,Haematopus,finschi,South Island Oystercatcher,,https://xeno-canto.org/46622/download,0:12
-46621,Haematopus,finschi,South Island Oystercatcher,,https://xeno-canto.org/46621/download,0:10
+345376,Haematopus,finschi,Oystercatcher,,https://xeno-canto.org/345376/download,1:05
+46627,Haematopus,finschi,Oystercatcher,,https://xeno-canto.org/46627/download,0:33
+46623,Haematopus,finschi,Oystercatcher,,https://xeno-canto.org/46623/download,0:17
+46622,Haematopus,finschi,Oystercatcher,,https://xeno-canto.org/46622/download,0:12
+46621,Haematopus,finschi,Oystercatcher,,https://xeno-canto.org/46621/download,0:10
 958051,Haematopus,unicolor,Variable Oystercatcher,uncertain,https://xeno-canto.org/958051/download,0:21
 188410,Haematopus,unicolor,Variable Oystercatcher,,https://xeno-canto.org/188410/download,0:16
 795085,Haematopus,unicolor,Variable Oystercatcher,"female, male",https://xeno-canto.org/795085/download,0:24
@@ -946,7 +948,7 @@ id,generic_name,scientific_name,english_name,sex,file_url,length
 207671,Vanellus,miles,Masked Lapwing,,https://xeno-canto.org/207671/download,0:49
 34720,Anarhynchus,frontalis,Wrybill,,https://xeno-canto.org/34720/download,0:25
 34719,Anarhynchus,frontalis,Wrybill,,https://xeno-canto.org/34719/download,0:16
-390381,Charadrius,obscurus,New Zealand Plover,,https://xeno-canto.org/390381/download,0:07
+390381,Charadrius,obscurus,Plover,,https://xeno-canto.org/390381/download,0:07
 796812,Charadrius,bicinctus,Double-banded Plover,uncertain,https://xeno-canto.org/796812/download,1:40
 34696,Charadrius,bicinctus,Double-banded Plover,,https://xeno-canto.org/34696/download,0:18
 396251,Charadrius,bicinctus,Double-banded Plover,,https://xeno-canto.org/396251/download,0:33
@@ -1119,9 +1121,9 @@ id,generic_name,scientific_name,english_name,sex,file_url,length
 664172,Phalacrocorax,punctatus,Spotted Shag,,https://xeno-canto.org/664172/download,1:46
 664170,Phalacrocorax,punctatus,Spotted Shag,,https://xeno-canto.org/664170/download,1:04
 664168,Phalacrocorax,punctatus,Spotted Shag,,https://xeno-canto.org/664168/download,1:00
-664271,Leucocarbo,carunculatus,New Zealand King Shag,,https://xeno-canto.org/664271/download,7:06
-663287,Leucocarbo,carunculatus,New Zealand King Shag,,https://xeno-canto.org/663287/download,4:28
-663285,Leucocarbo,carunculatus,New Zealand King Shag,,https://xeno-canto.org/663285/download,0:52
+664271,Leucocarbo,carunculatus,King Shag,,https://xeno-canto.org/664271/download,7:06
+663287,Leucocarbo,carunculatus,King Shag,,https://xeno-canto.org/663287/download,4:28
+663285,Leucocarbo,carunculatus,King Shag,,https://xeno-canto.org/663285/download,0:52
 927323,Leucocarbo,onslowi,Chatham Shag,uncertain,https://xeno-canto.org/927323/download,0:45
 927321,Leucocarbo,onslowi,Chatham Shag,uncertain,https://xeno-canto.org/927321/download,0:43
 927320,Leucocarbo,onslowi,Chatham Shag,uncertain,https://xeno-canto.org/927320/download,0:25
@@ -1166,7 +1168,7 @@ id,generic_name,scientific_name,english_name,sex,file_url,length
 110942,Todiramphus,tutus,Chattering Kingfisher,,https://xeno-canto.org/110942/download,1:21
 110941,Todiramphus,tutus,Chattering Kingfisher,,https://xeno-canto.org/110941/download,0:21
 110936,Todiramphus,tutus,Chattering Kingfisher,,https://xeno-canto.org/110936/download,0:06
-53839,Falco,novaeseelandiae,New Zealand Falcon,,https://xeno-canto.org/53839/download,0:32
+53839,Falco,novaeseelandiae,Falcon,,https://xeno-canto.org/53839/download,0:32
 961343,Nestor,notabilis,Kea,uncertain,https://xeno-canto.org/961343/download,0:24
 796387,Nestor,notabilis,Kea,uncertain,https://xeno-canto.org/796387/download,1:33
 796386,Nestor,notabilis,Kea,uncertain,https://xeno-canto.org/796386/download,3:43
@@ -1176,38 +1178,38 @@ id,generic_name,scientific_name,english_name,sex,file_url,length
 526698,Nestor,notabilis,Kea,,https://xeno-canto.org/526698/download,0:20
 345374,Nestor,notabilis,Kea,,https://xeno-canto.org/345374/download,1:29
 198296,Nestor,notabilis,Kea,,https://xeno-canto.org/198296/download,0:22
-959284,Nestor,meridionalis,New Zealand Kaka,uncertain,https://xeno-canto.org/959284/download,0:45
-959281,Nestor,meridionalis,New Zealand Kaka,uncertain,https://xeno-canto.org/959281/download,1:46
-959278,Nestor,meridionalis,New Zealand Kaka,uncertain,https://xeno-canto.org/959278/download,0:23
-959275,Nestor,meridionalis,New Zealand Kaka,uncertain,https://xeno-canto.org/959275/download,1:18
-959271,Nestor,meridionalis,New Zealand Kaka,uncertain,https://xeno-canto.org/959271/download,0:45
-959270,Nestor,meridionalis,New Zealand Kaka,uncertain,https://xeno-canto.org/959270/download,4:22
-853668,Nestor,meridionalis,New Zealand Kaka,uncertain,https://xeno-canto.org/853668/download,1:53
-776552,Nestor,meridionalis,New Zealand Kaka,uncertain,https://xeno-canto.org/776552/download,0:41
-526606,Nestor,meridionalis,New Zealand Kaka,,https://xeno-canto.org/526606/download,0:13
-526605,Nestor,meridionalis,New Zealand Kaka,,https://xeno-canto.org/526605/download,0:43
-378285,Nestor,meridionalis,New Zealand Kaka,,https://xeno-canto.org/378285/download,0:23
-378284,Nestor,meridionalis,New Zealand Kaka,,https://xeno-canto.org/378284/download,0:37
-378283,Nestor,meridionalis,New Zealand Kaka,,https://xeno-canto.org/378283/download,2:13
-378282,Nestor,meridionalis,New Zealand Kaka,,https://xeno-canto.org/378282/download,0:29
-293110,Nestor,meridionalis,New Zealand Kaka,,https://xeno-canto.org/293110/download,0:11
-207335,Nestor,meridionalis,New Zealand Kaka,,https://xeno-canto.org/207335/download,3:32
-207311,Nestor,meridionalis,New Zealand Kaka,,https://xeno-canto.org/207311/download,2:22
-152946,Nestor,meridionalis,New Zealand Kaka,,https://xeno-canto.org/152946/download,0:44
-925379,Nestor,meridionalis,New Zealand Kaka,uncertain,https://xeno-canto.org/925379/download,0:48
-843574,Nestor,meridionalis,New Zealand Kaka,uncertain,https://xeno-canto.org/843574/download,0:20
-526604,Nestor,meridionalis,New Zealand Kaka,,https://xeno-canto.org/526604/download,0:22
-526603,Nestor,meridionalis,New Zealand Kaka,,https://xeno-canto.org/526603/download,0:10
-526602,Nestor,meridionalis,New Zealand Kaka,,https://xeno-canto.org/526602/download,0:12
-526601,Nestor,meridionalis,New Zealand Kaka,,https://xeno-canto.org/526601/download,0:15
-473412,Nestor,meridionalis,New Zealand Kaka,,https://xeno-canto.org/473412/download,4:09
-341676,Nestor,meridionalis,New Zealand Kaka,,https://xeno-canto.org/341676/download,0:44
-293835,Nestor,meridionalis,New Zealand Kaka,,https://xeno-canto.org/293835/download,0:39
-198513,Nestor,meridionalis,New Zealand Kaka,,https://xeno-canto.org/198513/download,0:35
-198297,Nestor,meridionalis,New Zealand Kaka,,https://xeno-canto.org/198297/download,0:01
-123234,Nestor,meridionalis,New Zealand Kaka,,https://xeno-canto.org/123234/download,0:01
-37193,Nestor,meridionalis,New Zealand Kaka,,https://xeno-canto.org/37193/download,0:27
-37192,Nestor,meridionalis,New Zealand Kaka,,https://xeno-canto.org/37192/download,0:32
+959284,Nestor,meridionalis,Kaka,uncertain,https://xeno-canto.org/959284/download,0:45
+959281,Nestor,meridionalis,Kaka,uncertain,https://xeno-canto.org/959281/download,1:46
+959278,Nestor,meridionalis,Kaka,uncertain,https://xeno-canto.org/959278/download,0:23
+959275,Nestor,meridionalis,Kaka,uncertain,https://xeno-canto.org/959275/download,1:18
+959271,Nestor,meridionalis,Kaka,uncertain,https://xeno-canto.org/959271/download,0:45
+959270,Nestor,meridionalis,Kaka,uncertain,https://xeno-canto.org/959270/download,4:22
+853668,Nestor,meridionalis,Kaka,uncertain,https://xeno-canto.org/853668/download,1:53
+776552,Nestor,meridionalis,Kaka,uncertain,https://xeno-canto.org/776552/download,0:41
+526606,Nestor,meridionalis,Kaka,,https://xeno-canto.org/526606/download,0:13
+526605,Nestor,meridionalis,Kaka,,https://xeno-canto.org/526605/download,0:43
+378285,Nestor,meridionalis,Kaka,,https://xeno-canto.org/378285/download,0:23
+378284,Nestor,meridionalis,Kaka,,https://xeno-canto.org/378284/download,0:37
+378283,Nestor,meridionalis,Kaka,,https://xeno-canto.org/378283/download,2:13
+378282,Nestor,meridionalis,Kaka,,https://xeno-canto.org/378282/download,0:29
+293110,Nestor,meridionalis,Kaka,,https://xeno-canto.org/293110/download,0:11
+207335,Nestor,meridionalis,Kaka,,https://xeno-canto.org/207335/download,3:32
+207311,Nestor,meridionalis,Kaka,,https://xeno-canto.org/207311/download,2:22
+152946,Nestor,meridionalis,Kaka,,https://xeno-canto.org/152946/download,0:44
+925379,Nestor,meridionalis,Kaka,uncertain,https://xeno-canto.org/925379/download,0:48
+843574,Nestor,meridionalis,Kaka,uncertain,https://xeno-canto.org/843574/download,0:20
+526604,Nestor,meridionalis,Kaka,,https://xeno-canto.org/526604/download,0:22
+526603,Nestor,meridionalis,Kaka,,https://xeno-canto.org/526603/download,0:10
+526602,Nestor,meridionalis,Kaka,,https://xeno-canto.org/526602/download,0:12
+526601,Nestor,meridionalis,Kaka,,https://xeno-canto.org/526601/download,0:15
+473412,Nestor,meridionalis,Kaka,,https://xeno-canto.org/473412/download,4:09
+341676,Nestor,meridionalis,Kaka,,https://xeno-canto.org/341676/download,0:44
+293835,Nestor,meridionalis,Kaka,,https://xeno-canto.org/293835/download,0:39
+198513,Nestor,meridionalis,Kaka,,https://xeno-canto.org/198513/download,0:35
+198297,Nestor,meridionalis,Kaka,,https://xeno-canto.org/198297/download,0:01
+123234,Nestor,meridionalis,Kaka,,https://xeno-canto.org/123234/download,0:01
+37193,Nestor,meridionalis,Kaka,,https://xeno-canto.org/37193/download,0:27
+37192,Nestor,meridionalis,Kaka,,https://xeno-canto.org/37192/download,0:32
 460933,Platycercus,eximius,Eastern Rosella,,https://xeno-canto.org/460933/download,0:06
 460932,Platycercus,eximius,Eastern Rosella,,https://xeno-canto.org/460932/download,0:04
 123250,Platycercus,eximius,Eastern Rosella,,https://xeno-canto.org/123250/download,0:12
@@ -1281,11 +1283,11 @@ id,generic_name,scientific_name,english_name,sex,file_url,length
 198874,Acanthisitta,chloris,Rifleman,,https://xeno-canto.org/198874/download,0:16
 198863,Acanthisitta,chloris,Rifleman,,https://xeno-canto.org/198863/download,0:58
 69862,Acanthisitta,chloris,Rifleman,,https://xeno-canto.org/69862/download,0:27
-516109,Xenicus,gilviventris,New Zealand Rockwren,uncertain,https://xeno-canto.org/516109/download,1:42
-516106,Xenicus,gilviventris,New Zealand Rockwren,uncertain,https://xeno-canto.org/516106/download,0:16
-516110,Xenicus,gilviventris,New Zealand Rockwren,uncertain,https://xeno-canto.org/516110/download,2:03
-516103,Xenicus,gilviventris,New Zealand Rockwren,male,https://xeno-canto.org/516103/download,0:12
-207344,Xenicus,gilviventris,New Zealand Rockwren,,https://xeno-canto.org/207344/download,1:08
+516109,Xenicus,gilviventris,Rockwren,uncertain,https://xeno-canto.org/516109/download,1:42
+516106,Xenicus,gilviventris,Rockwren,uncertain,https://xeno-canto.org/516106/download,0:16
+516110,Xenicus,gilviventris,Rockwren,uncertain,https://xeno-canto.org/516110/download,2:03
+516103,Xenicus,gilviventris,Rockwren,male,https://xeno-canto.org/516103/download,0:12
+207344,Xenicus,gilviventris,Rockwren,,https://xeno-canto.org/207344/download,1:08
 983507,Prosthemadera,novaeseelandiae,Tui,uncertain,https://xeno-canto.org/983507/download,2:34
 956970,Prosthemadera,novaeseelandiae,Tui,male,https://xeno-canto.org/956970/download,2:24
 956546,Prosthemadera,novaeseelandiae,Tui,male,https://xeno-canto.org/956546/download,2:33
@@ -1301,46 +1303,46 @@ id,generic_name,scientific_name,english_name,sex,file_url,length
 950871,Prosthemadera,novaeseelandiae,Tui,male,https://xeno-canto.org/950871/download,0:50
 388889,Prosthemadera,novaeseelandiae,Tui,,https://xeno-canto.org/388889/download,0:24
 185782,Prosthemadera,novaeseelandiae,Tui,,https://xeno-canto.org/185782/download,0:08
-957122,Anthornis,melanura,New Zealand Bellbird,uncertain,https://xeno-canto.org/957122/download,2:20
-845169,Anthornis,melanura,New Zealand Bellbird,uncertain,https://xeno-canto.org/845169/download,0:23
-842765,Anthornis,melanura,New Zealand Bellbird,uncertain,https://xeno-canto.org/842765/download,1:00
-842761,Anthornis,melanura,New Zealand Bellbird,uncertain,https://xeno-canto.org/842761/download,1:15
-842494,Anthornis,melanura,New Zealand Bellbird,male,https://xeno-canto.org/842494/download,0:40
-794900,Anthornis,melanura,New Zealand Bellbird,,https://xeno-canto.org/794900/download,0:30
-602854,Anthornis,melanura,New Zealand Bellbird,male,https://xeno-canto.org/602854/download,0:58
-428661,Anthornis,melanura,New Zealand Bellbird,,https://xeno-canto.org/428661/download,0:34
-428588,Anthornis,melanura,New Zealand Bellbird,,https://xeno-canto.org/428588/download,0:31
-288036,Anthornis,melanura,New Zealand Bellbird,,https://xeno-canto.org/288036/download,0:10
-198854,Anthornis,melanura,New Zealand Bellbird,,https://xeno-canto.org/198854/download,0:34
-196871,Anthornis,melanura,New Zealand Bellbird,,https://xeno-canto.org/196871/download,0:02
-114335,Anthornis,melanura,New Zealand Bellbird,,https://xeno-canto.org/114335/download,0:39
-951566,Anthornis,melanura,New Zealand Bellbird,uncertain,https://xeno-canto.org/951566/download,3:24
-933271,Anthornis,melanura,New Zealand Bellbird,uncertain,https://xeno-canto.org/933271/download,0:54
-198885,Anthornis,melanura,New Zealand Bellbird,,https://xeno-canto.org/198885/download,0:17
-186458,Anthornis,melanura,New Zealand Bellbird,,https://xeno-canto.org/186458/download,0:09
-163449,Anthornis,melanura,New Zealand Bellbird,,https://xeno-canto.org/163449/download,0:26
+957122,Anthornis,melanura,Bellbird,uncertain,https://xeno-canto.org/957122/download,2:20
+845169,Anthornis,melanura,Bellbird,uncertain,https://xeno-canto.org/845169/download,0:23
+842765,Anthornis,melanura,Bellbird,uncertain,https://xeno-canto.org/842765/download,1:00
+842761,Anthornis,melanura,Bellbird,uncertain,https://xeno-canto.org/842761/download,1:15
+842494,Anthornis,melanura,Bellbird,male,https://xeno-canto.org/842494/download,0:40
+794900,Anthornis,melanura,Bellbird,,https://xeno-canto.org/794900/download,0:30
+602854,Anthornis,melanura,Bellbird,male,https://xeno-canto.org/602854/download,0:58
+428661,Anthornis,melanura,Bellbird,,https://xeno-canto.org/428661/download,0:34
+428588,Anthornis,melanura,Bellbird,,https://xeno-canto.org/428588/download,0:31
+288036,Anthornis,melanura,Bellbird,,https://xeno-canto.org/288036/download,0:10
+198854,Anthornis,melanura,Bellbird,,https://xeno-canto.org/198854/download,0:34
+196871,Anthornis,melanura,Bellbird,,https://xeno-canto.org/196871/download,0:02
+114335,Anthornis,melanura,Bellbird,,https://xeno-canto.org/114335/download,0:39
+951566,Anthornis,melanura,Bellbird,uncertain,https://xeno-canto.org/951566/download,3:24
+933271,Anthornis,melanura,Bellbird,uncertain,https://xeno-canto.org/933271/download,0:54
+198885,Anthornis,melanura,Bellbird,,https://xeno-canto.org/198885/download,0:17
+186458,Anthornis,melanura,Bellbird,,https://xeno-canto.org/186458/download,0:09
+163449,Anthornis,melanura,Bellbird,,https://xeno-canto.org/163449/download,0:26
 983506,Gerygone,igata,Grey Gerygone,uncertain,https://xeno-canto.org/983506/download,0:09
 962323,Gerygone,igata,Grey Gerygone,uncertain,https://xeno-canto.org/962323/download,2:38
 404847,Gerygone,igata,Grey Gerygone,,https://xeno-canto.org/404847/download,0:27
 428803,Gerygone,igata,Grey Gerygone,,https://xeno-canto.org/428803/download,1:04
 391781,Gerygone,igata,Grey Gerygone,,https://xeno-canto.org/391781/download,0:13
 947404,Gerygone,albofrontata,Chatham Gerygone,uncertain,https://xeno-canto.org/947404/download,0:14
-794906,Callaeas,wilsoni,North Island Kokako,uncertain,https://xeno-canto.org/794906/download,3:34
-283980,Callaeas,wilsoni,North Island Kokako,,https://xeno-canto.org/283980/download,0:12
-237582,Callaeas,wilsoni,North Island Kokako,,https://xeno-canto.org/237582/download,0:04
-276797,Callaeas,cinereus,South Island Kokako,,https://xeno-canto.org/276797/download,0:11
-960640,Philesturnus,rufusater,North Island Saddleback,male,https://xeno-canto.org/960640/download,0:31
-956955,Philesturnus,rufusater,North Island Saddleback,uncertain,https://xeno-canto.org/956955/download,1:50
-670597,Philesturnus,rufusater,North Island Saddleback,,https://xeno-canto.org/670597/download,2:52
-295405,Philesturnus,rufusater,North Island Saddleback,,https://xeno-canto.org/295405/download,0:06
-33758,Philesturnus,rufusater,North Island Saddleback,,https://xeno-canto.org/33758/download,0:51
-925456,Philesturnus,rufusater,North Island Saddleback,,https://xeno-canto.org/925456/download,0:23
-295411,Philesturnus,rufusater,North Island Saddleback,,https://xeno-canto.org/295411/download,1:20
-293357,Philesturnus,rufusater,North Island Saddleback,,https://xeno-canto.org/293357/download,0:14
-293316,Philesturnus,rufusater,North Island Saddleback,,https://xeno-canto.org/293316/download,0:49
-206325,Philesturnus,rufusater,North Island Saddleback,,https://xeno-canto.org/206325/download,0:10
-185965,Philesturnus,rufusater,North Island Saddleback,,https://xeno-canto.org/185965/download,0:06
-112765,Philesturnus,carunculatus,South Island Saddleback,"female, male",https://xeno-canto.org/112765/download,1:46
+794906,Callaeas,wilsoni,Kokako,uncertain,https://xeno-canto.org/794906/download,3:34
+283980,Callaeas,wilsoni,Kokako,,https://xeno-canto.org/283980/download,0:12
+237582,Callaeas,wilsoni,Kokako,,https://xeno-canto.org/237582/download,0:04
+276797,Callaeas,cinereus,Kokako,,https://xeno-canto.org/276797/download,0:11
+960640,Philesturnus,rufusater,Saddleback,male,https://xeno-canto.org/960640/download,0:31
+956955,Philesturnus,rufusater,Saddleback,uncertain,https://xeno-canto.org/956955/download,1:50
+670597,Philesturnus,rufusater,Saddleback,,https://xeno-canto.org/670597/download,2:52
+295405,Philesturnus,rufusater,Saddleback,,https://xeno-canto.org/295405/download,0:06
+33758,Philesturnus,rufusater,Saddleback,,https://xeno-canto.org/33758/download,0:51
+925456,Philesturnus,rufusater,Saddleback,,https://xeno-canto.org/925456/download,0:23
+295411,Philesturnus,rufusater,Saddleback,,https://xeno-canto.org/295411/download,1:20
+293357,Philesturnus,rufusater,Saddleback,,https://xeno-canto.org/293357/download,0:14
+293316,Philesturnus,rufusater,Saddleback,,https://xeno-canto.org/293316/download,0:49
+206325,Philesturnus,rufusater,Saddleback,,https://xeno-canto.org/206325/download,0:10
+185965,Philesturnus,rufusater,Saddleback,,https://xeno-canto.org/185965/download,0:06
+112765,Philesturnus,carunculatus,Saddleback,"female, male",https://xeno-canto.org/112765/download,1:46
 794903,Notiomystis,cincta,Stitchbird,uncertain,https://xeno-canto.org/794903/download,0:22
 794899,Notiomystis,cincta,Stitchbird,,https://xeno-canto.org/794899/download,0:15
 475997,Notiomystis,cincta,Stitchbird,,https://xeno-canto.org/475997/download,0:49
@@ -1377,18 +1379,18 @@ id,generic_name,scientific_name,english_name,sex,file_url,length
 198877,Mohoua,novaeseelandiae,Pipipi,,https://xeno-canto.org/198877/download,0:45
 198856,Mohoua,novaeseelandiae,Pipipi,,https://xeno-canto.org/198856/download,0:04
 198516,Mohoua,novaeseelandiae,Pipipi,,https://xeno-canto.org/198516/download,0:05
-956729,Rhipidura,fuliginosa,New Zealand Fantail,male,https://xeno-canto.org/956729/download,2:02
-537843,Rhipidura,fuliginosa,New Zealand Fantail,,https://xeno-canto.org/537843/download,0:12
-537841,Rhipidura,fuliginosa,New Zealand Fantail,,https://xeno-canto.org/537841/download,0:19
-526607,Rhipidura,fuliginosa,New Zealand Fantail,,https://xeno-canto.org/526607/download,0:18
-431811,Rhipidura,fuliginosa,New Zealand Fantail,,https://xeno-canto.org/431811/download,0:05
-331535,Rhipidura,fuliginosa,New Zealand Fantail,,https://xeno-canto.org/331535/download,1:25
-152948,Rhipidura,fuliginosa,New Zealand Fantail,,https://xeno-canto.org/152948/download,0:19
-926857,Rhipidura,fuliginosa,New Zealand Fantail,,https://xeno-canto.org/926857/download,1:23
-892541,Rhipidura,fuliginosa,New Zealand Fantail,uncertain,https://xeno-canto.org/892541/download,0:28
-562519,Rhipidura,fuliginosa,New Zealand Fantail,,https://xeno-canto.org/562519/download,0:03
-206476,Rhipidura,fuliginosa,New Zealand Fantail,,https://xeno-canto.org/206476/download,0:22
-46594,Rhipidura,fuliginosa,New Zealand Fantail,,https://xeno-canto.org/46594/download,0:38
+956729,Rhipidura,fuliginosa,Fantail,male,https://xeno-canto.org/956729/download,2:02
+537843,Rhipidura,fuliginosa,Fantail,,https://xeno-canto.org/537843/download,0:12
+537841,Rhipidura,fuliginosa,Fantail,,https://xeno-canto.org/537841/download,0:19
+526607,Rhipidura,fuliginosa,Fantail,,https://xeno-canto.org/526607/download,0:18
+431811,Rhipidura,fuliginosa,Fantail,,https://xeno-canto.org/431811/download,0:05
+331535,Rhipidura,fuliginosa,Fantail,,https://xeno-canto.org/331535/download,1:25
+152948,Rhipidura,fuliginosa,Fantail,,https://xeno-canto.org/152948/download,0:19
+926857,Rhipidura,fuliginosa,Fantail,,https://xeno-canto.org/926857/download,1:23
+892541,Rhipidura,fuliginosa,Fantail,uncertain,https://xeno-canto.org/892541/download,0:28
+562519,Rhipidura,fuliginosa,Fantail,,https://xeno-canto.org/562519/download,0:03
+206476,Rhipidura,fuliginosa,Fantail,,https://xeno-canto.org/206476/download,0:22
+46594,Rhipidura,fuliginosa,Fantail,,https://xeno-canto.org/46594/download,0:38
 443148,Pomarea,dimidiata,Rarotonga Monarch,,https://xeno-canto.org/443148/download,0:06
 443147,Pomarea,dimidiata,Rarotonga Monarch,,https://xeno-canto.org/443147/download,0:13
 442996,Pomarea,dimidiata,Rarotonga Monarch,,https://xeno-canto.org/442996/download,0:06
@@ -1424,14 +1426,14 @@ id,generic_name,scientific_name,english_name,sex,file_url,length
 795082,Petroica,macrocephala,Tomtit,uncertain,https://xeno-canto.org/795082/download,0:30
 795079,Petroica,macrocephala,Tomtit,uncertain,https://xeno-canto.org/795079/download,1:37
 378231,Petroica,macrocephala,Tomtit,,https://xeno-canto.org/378231/download,0:16
-959276,Petroica,longipes,North Island Robin,uncertain,https://xeno-canto.org/959276/download,3:16
-237583,Petroica,longipes,North Island Robin,,https://xeno-canto.org/237583/download,1:43
-183186,Petroica,longipes,North Island Robin,,https://xeno-canto.org/183186/download,0:24
-796378,Petroica,australis,South Island Robin,uncertain,https://xeno-canto.org/796378/download,1:45
-293067,Petroica,australis,South Island Robin,,https://xeno-canto.org/293067/download,0:14
-925466,Petroica,australis,South Island Robin,uncertain,https://xeno-canto.org/925466/download,0:35
-473398,Petroica,australis,South Island Robin,,https://xeno-canto.org/473398/download,0:02
-198515,Petroica,australis,South Island Robin,,https://xeno-canto.org/198515/download,0:12
+959276,Petroica,longipes,Robin,uncertain,https://xeno-canto.org/959276/download,3:16
+237583,Petroica,longipes,Robin,,https://xeno-canto.org/237583/download,1:43
+183186,Petroica,longipes,Robin,,https://xeno-canto.org/183186/download,0:24
+796378,Petroica,australis,Robin,uncertain,https://xeno-canto.org/796378/download,1:45
+293067,Petroica,australis,Robin,,https://xeno-canto.org/293067/download,0:14
+925466,Petroica,australis,Robin,uncertain,https://xeno-canto.org/925466/download,0:35
+473398,Petroica,australis,Robin,,https://xeno-canto.org/473398/download,0:02
+198515,Petroica,australis,Robin,,https://xeno-canto.org/198515/download,0:12
 927766,Petroica,traversi,Black Robin,uncertain,https://xeno-canto.org/927766/download,1:11
 927765,Petroica,traversi,Black Robin,uncertain,https://xeno-canto.org/927765/download,0:30
 927764,Petroica,traversi,Black Robin,uncertain,https://xeno-canto.org/927764/download,0:57
@@ -1455,14 +1457,14 @@ id,generic_name,scientific_name,english_name,sex,file_url,length
 344435,Hirundo,neoxena,Welcome Swallow,,https://xeno-canto.org/344435/download,0:51
 152935,Hirundo,neoxena,Welcome Swallow,,https://xeno-canto.org/152935/download,0:07
 46599,Hirundo,neoxena,Welcome Swallow,,https://xeno-canto.org/46599/download,0:25
-526615,Poodytes,punctatus,New Zealand Fernbird,,https://xeno-canto.org/526615/download,0:17
-405502,Poodytes,punctatus,New Zealand Fernbird,,https://xeno-canto.org/405502/download,0:44
-296048,Poodytes,punctatus,New Zealand Fernbird,,https://xeno-canto.org/296048/download,0:20
-138724,Poodytes,punctatus,New Zealand Fernbird,,https://xeno-canto.org/138724/download,1:15
-476168,Poodytes,punctatus,New Zealand Fernbird,,https://xeno-canto.org/476168/download,0:35
-349218,Poodytes,punctatus,New Zealand Fernbird,,https://xeno-canto.org/349218/download,0:19
-344716,Poodytes,punctatus,New Zealand Fernbird,,https://xeno-canto.org/344716/download,1:00
-344715,Poodytes,punctatus,New Zealand Fernbird,,https://xeno-canto.org/344715/download,0:55
+526615,Poodytes,punctatus,Fernbird,,https://xeno-canto.org/526615/download,0:17
+405502,Poodytes,punctatus,Fernbird,,https://xeno-canto.org/405502/download,0:44
+296048,Poodytes,punctatus,Fernbird,,https://xeno-canto.org/296048/download,0:20
+138724,Poodytes,punctatus,Fernbird,,https://xeno-canto.org/138724/download,1:15
+476168,Poodytes,punctatus,Fernbird,,https://xeno-canto.org/476168/download,0:35
+349218,Poodytes,punctatus,Fernbird,,https://xeno-canto.org/349218/download,0:19
+344716,Poodytes,punctatus,Fernbird,,https://xeno-canto.org/344716/download,1:00
+344715,Poodytes,punctatus,Fernbird,,https://xeno-canto.org/344715/download,0:55
 938198,Zosterops,lateralis,Silvereye,uncertain,https://xeno-canto.org/938198/download,1:45
 821562,Zosterops,lateralis,Silvereye,uncertain,https://xeno-canto.org/821562/download,0:57
 821561,Zosterops,lateralis,Silvereye,uncertain,https://xeno-canto.org/821561/download,0:55
@@ -1502,9 +1504,9 @@ id,generic_name,scientific_name,english_name,sex,file_url,length
 926802,Prunella,modularis,Dunnock,uncertain,https://xeno-canto.org/926802/download,1:43
 926801,Prunella,modularis,Dunnock,uncertain,https://xeno-canto.org/926801/download,0:34
 46603,Prunella,modularis,Dunnock,,https://xeno-canto.org/46603/download,0:09
-537877,Anthus,novaeseelandiae,New Zealand Pipit,,https://xeno-canto.org/537877/download,0:19
-466572,Anthus,novaeseelandiae,New Zealand Pipit,,https://xeno-canto.org/466572/download,2:07
-236297,Anthus,novaeseelandiae,New Zealand Pipit,,https://xeno-canto.org/236297/download,0:21
+537877,Anthus,novaeseelandiae,Pipit,,https://xeno-canto.org/537877/download,0:19
+466572,Anthus,novaeseelandiae,Pipit,,https://xeno-canto.org/466572/download,2:07
+236297,Anthus,novaeseelandiae,Pipit,,https://xeno-canto.org/236297/download,0:21
 984425,Fringilla,coelebs,Common Chaffinch,uncertain,https://xeno-canto.org/984425/download,2:00
 978430,Fringilla,coelebs,Common Chaffinch,uncertain,https://xeno-canto.org/978430/download,3:20
 959468,Fringilla,coelebs,Common Chaffinch,male,https://xeno-canto.org/959468/download,1:24
