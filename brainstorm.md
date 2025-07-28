@@ -42,3 +42,30 @@ Planning tot take a LoRA approach to finetuning the model.
 6. [ ] Finetune HybridViT model
 7. [ ] Evaluate performance
 8. [ ] Create real usage application
+
+## Checkin
+
+Start with few birds, and then evolve to more as goes on.
+
+- Tūī (Prosthemadera novaeseelandiae): 165
+- Bellbird/Korimako (Anthornis melanura): 73
+- Fantail/Pīwakawaka (Rhipidura fuliginosa): 43
+- Robin/Toutouwai (Petroica longipes): 41
+- Kākā (Nestor meridionalis): 41
+- Tomtit/Miromiro (Petroica macrocephala): 39
+- Whitehead/Pōpokotea (Mohoua albicilla): 44
+- Morepork/Ruru (Ninox novaeseelandiae): 31
+- Saddleback/Tīeke (Philesturnus rufusater): 39
+- Silvereye/Tauhou (Zosterops lateralis): 30
+
+Window then discrete fourier transform
+
+scipy transform - rfft
+
+20ms ~
+
+40k sample rate = 20k hz
+
+usually 24khz
+
+rsfft

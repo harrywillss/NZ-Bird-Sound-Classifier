@@ -3,21 +3,30 @@ import json
 import requests
 import pandas as pd
 import re
+import tqdm
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Using advanced search to find bird songs in New Zealand
 # see https://xeno-canto.org/help/search
 
 # Bird types: ["Fantail", "Kākā", "Bellbird", "Tūī", "Kea", "Morepork", "Kākāpō", "House Sparrow"], # List of bird types to search for
 # Recording types: ["song", "call"]
+# Recording quality: ">C" (C or better)
+# Country: "New Zealand"
+# Group: "birds"
 
 class BirdRecordingDownloader:
     BASE_URL = "https://xeno-canto.org/api/3/recordings"
-    def __init__(self, country="New Zealand", group="birds", recording_type="call", quality=">C", output_dir="downloads"):
+    def __init__(self, country="New Zealand", group="birds", recording_type="call", quality=">C", output_dir="downloads", bird_types=None):
         self.country = country
         self.group = group
         self.recording_type = recording_type
         self.quality = quality
         self.output_dir = output_dir
+        self.bird_types = bird_types if bird_types else []
         self.api_key = os.getenv("XC_API_KEY")
 
         if not self.api_key:
@@ -59,9 +68,6 @@ class BirdRecordingDownloader:
         i = 0
         for rec in recordings:
             i += 1
-            if i == 10:
-                print("⏸️ Download limit reached (10 recordings). Stopping downloads.")
-                break
             print(f"Processing recording {i}/{len(recordings)}: {rec.get('id', 'unknown')}")
             if "file" not in rec or "id" not in rec:
                 continue
@@ -81,6 +87,11 @@ class BirdRecordingDownloader:
             filename = f"{file_id}_{en}_{genus_species}_{rec_type}.wav"
             filepath = os.path.join(self.output_dir, filename)
 
+            if os.path.exists(filepath):
+                print(f"⏩ File already exists: {filename}, skipping download.")
+                downloaded.append(filepath)
+                continue
+
             print(f"⬇️ Downloading {filename}...")
             resp = requests.get(file_url)
             if resp.status_code == 200:
@@ -90,6 +101,7 @@ class BirdRecordingDownloader:
                 downloaded.append(filepath)
             else:
                 print(f"❌ Failed to download {file_id}: {resp.status_code}")
+        print(f"📥 Downloaded {len(downloaded)} recordings to {self.output_dir}")
         return downloaded
 
     def save_metadata(self, recordings, metadata_filename="recordings_metadata.json", csv_filename="recordings_data.csv"):
@@ -176,6 +188,22 @@ class BirdRecordingDownloader:
             return mins * 60 + secs
         except Exception:
             return 0
+        
+    def filter_recordings(self, recordings):
+        # Filter recordings based on bird types and quality
+        filtered = []
+        for rec in recordings:
+            if "gen" not in rec or "sp" not in rec or "en" not in rec:
+                continue
+            
+            genus_species = f"{rec['gen']} {rec['sp']}"
+            english_name = rec.get("en", "Unknown")
+            if (self.bird_types and genus_species not in self.bird_types.values() and
+                english_name not in self.bird_types.keys()):
+                continue
+            
+            filtered.append(rec)
+        return filtered
 
     def run(self):
         # Fetch 'song' recordings
@@ -193,16 +221,48 @@ class BirdRecordingDownloader:
         # Combine and remove duplicates by 'id'
         all_recordings = {rec['id']: rec for rec in recordings_song + recordings_call}.values()
 
-        #self.download_recordings(all_recordings)
-        self.save_metadata(all_recordings)
-        self.report_summary(list(all_recordings))
+        filtered_recordings = self.filter_recordings(all_recordings)
+
+        self.save_metadata(filtered_recordings)
+        self.report_summary(filtered_recordings)
+
+        if input("Do you want to download the recordings? (y/n): ").strip().lower() != 'y':
+            print("Download skipped.")
+            return
+        # Optionally limit or download
+        self.download_recordings(filtered_recordings)
+
+# - Tūī (Prosthemadera novaeseelandiae): 165
+# - Bellbird/Korimako (Anthornis melanura): 73
+# - Fantail/Pīwakawaka (Rhipidura fuliginosa): 43
+# - Robin/Toutouwai (Petroica longipes): 41
+# - Kākā (Nestor meridionalis): 41
+# - Tomtit/Miromiro (Petroica macrocephala): 39
+# - Whitehead/Pōpokotea (Mohoua albicilla): 44
+# - Morepork/Ruru (Ninox novaeseelandiae): 31
+# - Saddleback/Tīeke (Philesturnus rufusater): 39
+# - Silvereye/Tauhou (Zosterops lateralis): 30
+
+bird_types = {
+    "Tūī": "Prosthemadera novaeseelandiae",
+    "Bellbird/Korimako": "Anthornis melanura",
+    "Fantail/Pīwakawaka": "Rhipidura fuliginosa",
+    "Robin/Toutouwai": "Petroica longipes",
+    "Kākā": "Nestor meridionalis",
+    "Tomtit/Miromiro": "Petroica macrocephala",
+    "Whitehead/Pōpokotea": "Mohoua albicilla",
+    "Morepork/Ruru": "Ninox novaeseelandiae",
+    "Saddleback/Tīeke": "Philesturnus rufusater",
+    "Silvereye/Tauhou": "Zosterops lateralis"
+}
 
 if __name__ == "__main__":
-    downloader = BirdRecordingDownloader()
+    tqdm.tqdm.pandas(desc="Downloading recordings")
+    print("🐦 Starting Bird Recording Downloader...")
+    downloader = BirdRecordingDownloader(bird_types=bird_types)
     downloader.run()
 
 # TODO:
-# - Add more error handling for network requests and file operations.
 # - Implement a progress bar for downloads.
 # - Remove 'Identity unknown' recordings
 # - Combine separate "North Island" and "South Island" bird types into a single type.
