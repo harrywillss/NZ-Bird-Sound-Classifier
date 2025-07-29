@@ -228,37 +228,47 @@ import soundfile as sf
 #     else:
 #         print(f"Directory {resampled_dir} already exists. Deleting entire folder.")
 #         shutil.rmtree(resampled_dir)
+#         os.makedirs(resampled_dir)
 #     filenames = [f for f in os.listdir(download_dir) if f.endswith(".wav")]
+#     failed_files = 0
 #     for filename in filenames:
 #         # Construct full path
 #         path = os.path.join(download_dir, filename)
-#         # Parse filename: e.g. '33763_tui_prosthemadera_novaeseelandiae_song.wav' -> "{file_id}_{english_name}_{scientific_name}.wav"
-#         parts = filename[:-4].split('_')  # remove .wav, split
-#         if len(parts) < 3:
-#             print(f"Filename format not recognized: {filename}")
+        
+#         try:
+#             # Parse filename
+#             parts = filename[:-4].split('_')
+#             if len(parts) < 3:
+#                 print(f"Filename format not recognized: {filename}")
+#                 continue
+                
+#             file_id = parts[0]
+#             english_name = parts[1]
+#             scientific_name = '_'.join(parts[2:-1])
+#             scientific_name_pretty = ' '.join([p.capitalize() for p in parts[2:-1]])
+            
+#             # Load and validate the audio file
+#             y, sr = librosa.load(path, sr=None)
+            
+#             if sr > 22050:
+#                 y = librosa.resample(y, orig_sr=sr, target_sr=44100)
+#                 sr = 44100
+#             elif sr < 22050:
+#                 continue
+                
+#             # Save to nested folder
+#             nested_folder = os.path.join(resampled_dir, english_name, scientific_name)
+#             os.makedirs(nested_folder, exist_ok=True)
+#             out_path = os.path.join(nested_folder, filename)
+#             sf.write(out_path, y, sr)
+#             print(f"Saved {filename} to {nested_folder}")
+            
+#         except Exception as e:
+#             print(f"ERROR: Failed to process {filename}: {str(e)}")
+#             failed_files += 1
 #             continue
-#         file_id = parts[0]
-#         english_name = parts[1]
-#         scientific_name = '_'.join(parts[2:-1])
-#         scientific_name_pretty = ' '.join([p.capitalize() for p in parts[2:-1]])
-#         # Resample if needed
-#         y, sr = librosa.load(path, sr=None)
-#         if sr > 22050:
-#             y = librosa.resample(y, orig_sr=sr, target_sr=44100)
-#             sr = 44100
-#         elif sr < 22050:
-#             print(f"Skipping {filename} as it is already at a lower sample rate ({sr} Hz)")
-#             continue
-#         # If filename contains '_new_zealand', '_north_island', or '_south_island', remove it
-#         if '_new_zealand' in filename or '_north_island' in filename or '_south_island' in filename:
-#             filename = filename.replace('_new_zealand', '').replace('_north_island', '').replace('_south_island', '')
-#             print(f"Renaming {filename} to remove island names.")
-#         # Save to nested folder: resampled/english_name/scientific_name/filename.wav
-#         nested_folder = os.path.join(resampled_dir, english_name, scientific_name)
-#         os.makedirs(nested_folder, exist_ok=True)
-#         out_path = os.path.join(nested_folder, filename)
-#         sf.write(out_path, y, sr)
-#         print(f"Saved {filename} to {nested_folder} (Scientific: {scientific_name_pretty})")
+    
+#     print(f"Resampling complete. {failed_files} files failed to process.")
 
 # if __name__ == "__main__":
 #     print("Loading audio data clips...")
@@ -376,10 +386,16 @@ class AudioProcessor:
 
         self.resample_audio()
 
+        # Check if user wants to skip segmentation and use existing segments
+        if os.path.exists(segments_dir) and input("Segments directory exists. Do you want to skip segmentation and load existing segments? (y/n): ").strip().lower() == 'y':
+            print("Loading existing segments...")
+            return self.load_existing_segments(segments_dir, duration)
+
         audio_clips = []
         labels = []
         total_files = 0
         processed_files = 0
+        failed_files = 0
 
         # Create segments directory if saving segments
         if save_segments and not os.path.exists(segments_dir):
@@ -399,63 +415,139 @@ class AudioProcessor:
                 label = os.path.basename(os.path.dirname(root))
                 print(f"Processing {file}, label: {label}")
                 
-                # Load the audio file
-                audio, sr = librosa.load(file_path, sr=None)
-                print(f"  Audio length: {len(audio)/sr:.2f}s, sample rate: {sr}")
-                
-                # Use more flexible segmentation - lower SNR threshold and shorter segments
-                segments = self.segment_audio_snr(audio, sr, segment_len_ms=3000, snr_threshold=2)
-                print(f"  Found {len(segments)} segments")
-                
-                # If no segments found, use simple fixed-duration chunking as fallback
-                if len(segments) == 0:
-                    print("  No SNR segments found, using fixed chunking")
-                    chunk_size = int(duration * sr)
-                    for start in range(0, len(audio) - chunk_size, chunk_size // 2):  # 50% overlap
-                        chunk = audio[start:start + chunk_size]
-                        if len(chunk) == chunk_size:
-                            segments.append(chunk)
-                    print(f"  Created {len(segments)} fixed chunks")
-                
-                for i, clip in enumerate(segments):
-                    # More flexible duration check (accept 50% to 150% of target)
-                    expected_length = duration * sr
-                    clip_duration = len(clip) / sr
-                    print(f"    Segment {i}: {clip_duration:.2f}s")
+                try:
+                    # Load the audio file
+                    audio, sr = librosa.load(file_path, sr=None)
+                    print(f"  Audio length: {len(audio)/sr:.2f}s, sample rate: {sr}")
                     
-                    if len(clip) >= expected_length * 0.5:
-                        # Pad or trim to exact duration
-                        if len(clip) < expected_length:
-                            clip = np.pad(clip, (0, expected_length - len(clip)), mode='constant')
-                        elif len(clip) > expected_length:
-                            clip = clip[:expected_length]
-                        
-                        audio_clips.append(clip)
-                        labels.append(label)
-                        print(f"    Added segment {i} to dataset")
-                        
-                        # Save segment if requested
-                        if save_segments:
-                            # Create nested structure in segments folder
-                            english_name = os.path.basename(os.path.dirname(root))
-                            scientific_name = os.path.basename(root)
-                            segment_folder = os.path.join(segments_dir, english_name, scientific_name)
-                            os.makedirs(segment_folder, exist_ok=True)
-                            
-                            # Save segment with original filename + segment number
-                            segment_filename = f"{file[:-4]}_segment_{i}.wav"
-                            segment_path = os.path.join(segment_folder, segment_filename)
-                            sf.write(segment_path, clip, sr)
-                
-                processed_files += 1
+                    # Use more flexible segmentation - lower SNR threshold and shorter segments
+                    segments = self.segment_audio_snr(audio, sr, segment_len_ms=3000, snr_threshold=2)
+                    print(f"  Found {len(segments)} segments")
+                    
+                    # If no segments found, use simple fixed-duration chunking as fallback
+                    if len(segments) == 0:
+                        print("  No SNR segments found, using fixed chunking")
+                        chunk_size = int(duration * sr)
+                        for start in range(0, len(audio) - chunk_size, chunk_size // 2):  # 50% overlap
+                            chunk = audio[start:start + chunk_size]
+                            if len(chunk) == chunk_size:
+                                segments.append(chunk)
+                        print(f"  Created {len(segments)} fixed chunks")
+                    
+                    for i, clip in enumerate(segments):
+                        expected_length = duration * sr
+                        clip_duration = len(clip) / sr
+                        print(f"    Segment {i}: {clip_duration:.2f}s")
 
-        print(f"Total files found: {total_files}, processed: {processed_files}")
+                        if len(clip) >= expected_length * 0.75:  # Accept segments that are at least 75% of the expected length
+                            # Pad or trim to exact duration
+                            if len(clip) < expected_length:
+                                clip = np.pad(clip, (0, expected_length - len(clip)), mode='constant')
+                            elif len(clip) > expected_length:
+                                clip = clip[:expected_length]
+                            
+                            audio_clips.append(clip)
+                            labels.append(label)
+                            print(f"    Added segment {i} to dataset")
+                            
+                            # Save segment if requested
+                            if save_segments:
+                                # Create nested structure in segments folder
+                                english_name = os.path.basename(os.path.dirname(root))
+                                scientific_name = os.path.basename(root)
+                                segment_folder = os.path.join(segments_dir, english_name, scientific_name)
+                                os.makedirs(segment_folder, exist_ok=True)
+                                
+                                # Save segment with original filename + segment number
+                                segment_filename = f"{file[:-4]}_segment_{i}.wav"
+                                segment_path = os.path.join(segment_folder, segment_filename)
+                                sf.write(segment_path, clip, sr)
+                    
+                    processed_files += 1
+                    
+                except Exception as e:
+                    print(f"  ERROR: Failed to process {file}: {str(e)}")
+                    failed_files += 1
+                    # Optionally remove the corrupted file
+                    try:
+                        os.remove(file_path)
+                        print(f"  Removed corrupted file: {file}")
+                    except:
+                        print(f"  Could not remove corrupted file: {file}")
+                    continue
+
+        print(f"Total files found: {total_files}, processed: {processed_files}, failed: {failed_files}")
         print(f"Total segments extracted: {len(audio_clips)}")
         return audio_clips, labels
 
+    def load_existing_segments(self, segments_dir, duration=3):
+        """
+        Load existing audio segments from the segments directory.
+        """
+        audio_clips = []
+        labels = []
+        total_segments = 0
+        loaded_segments = 0
+        failed_segments = 0
+
+        print(f"Walking through segments directory: {segments_dir}")
+        
+        # Recursively walk through all subfolders and process .wav files
+        for root, dirs, files in os.walk(segments_dir):
+            wav_files = [f for f in files if f.endswith('.wav')]
+            if wav_files:
+                print(f"Found {len(wav_files)} segment files in {root}")
+                total_segments += len(wav_files)
+            
+            for file in wav_files:
+                file_path = os.path.join(root, file)
+                # Use the English name as the label (grandparent folder of segment file)
+                # Structure: segments_dir/english_name/scientific_name/segment_file.wav
+                label = os.path.basename(os.path.dirname(os.path.dirname(file_path)))
+                print(f"Loading segment {file}, label: {label}")
+                
+                try:
+                    # Load the audio segment
+                    audio, sr = librosa.load(file_path, sr=None)
+                    expected_length = int(duration * sr)
+                    
+                    # Ensure the segment has the correct duration
+                    if len(audio) < expected_length:
+                        # Pad if too short
+                        audio = np.pad(audio, (0, expected_length - len(audio)), mode='constant')
+                    elif len(audio) > expected_length:
+                        # Trim if too long
+                        audio = audio[:expected_length]
+                    
+                    audio_clips.append(audio)
+                    labels.append(label)
+                    loaded_segments += 1
+                    
+                except Exception as e:
+                    print(f"  ERROR: Failed to load segment {file}: {str(e)}")
+                    failed_segments += 1
+                    continue
+        
+        print(f"Total segments found: {total_segments}, loaded: {loaded_segments}, failed: {failed_segments}")
+        return audio_clips, labels
+
     # Create features using Mel-Spectrogram
-    def extract_features(self, audio_files):
-        features = [librosa.feature.melspectrogram(y=audio) for audio in audio_files]
+    def extract_features(self, audio_files, target_width=188):
+        features = []
+        for audio in audio_files:
+            # Generate mel-spectrogram
+            mel_spec = librosa.feature.melspectrogram(y=audio)
+            
+            # Ensure consistent width by padding or trimming
+            if mel_spec.shape[1] < target_width:
+                # Pad with zeros if too short
+                pad_width = target_width - mel_spec.shape[1]
+                mel_spec = np.pad(mel_spec, ((0, 0), (0, pad_width)), mode='constant')
+            elif mel_spec.shape[1] > target_width:
+                # Trim if too long
+                mel_spec = mel_spec[:, :target_width]
+            
+            features.append(mel_spec)
         return features
 
     # Create image patches with the positional encodings
@@ -480,6 +572,24 @@ class AudioProcessor:
         sequences = []
 
         for idx, feature in enumerate(features):
+            # Ensure feature has the expected dimensions
+            if feature.shape != (height, width):
+                print(f"Warning: Feature {idx} has shape {feature.shape}, expected ({height}, {width})")
+                # Resize or pad the feature to match expected dimensions
+                if feature.shape[0] != height:
+                    # Pad or trim height
+                    if feature.shape[0] < height:
+                        feature = np.pad(feature, ((0, height - feature.shape[0]), (0, 0)), mode='constant')
+                    else:
+                        feature = feature[:height, :]
+                
+                if feature.shape[1] != width:
+                    # Pad or trim width
+                    if feature.shape[1] < width:
+                        feature = np.pad(feature, ((0, 0), (0, width - feature.shape[1])), mode='constant')
+                    else:
+                        feature = feature[:, :width]
+            
             current_sequence = []
 
             for i in range(0, height, patch_size):
@@ -547,39 +657,59 @@ class AudioProcessor:
         For each .wav file in download_dir, resample to 44100 Hz if needed, and copy to resampled_dir
         in subfolders for both English and scientific names.
         """
-        # if input("Do you want to resample audio files? (y/n): ").strip().lower() != 'y':
-        #     print("Skipping audio resampling.")
-        #     return
+        if input("Do you want to resample audio files? (y/n): ").strip().lower() != 'y':
+            print("Skipping audio resampling.")
+            return
+            
         if not os.path.exists(resampled_dir):
             os.makedirs(resampled_dir)
         else:
             print(f"Directory {resampled_dir} already exists. Deleting entire folder.")
             shutil.rmtree(resampled_dir)
+            os.makedirs(resampled_dir)
+            
         filenames = [f for f in os.listdir(download_dir) if f.endswith(".wav")]
+        failed_files = 0
+        
         for filename in filenames:
             # Construct full path
             path = os.path.join(download_dir, filename)
-            # Parse filename: e.g. '33763_tui_prosthemadera_novaeseelandiae_song.wav' -> "{file_id}_{english_name}_{scientific_name}.wav"
-            parts = filename[:-4].split('_')  # remove .wav, split
-            if len(parts) < 3:
-                print(f"Filename format not recognized: {filename}")
+            
+            try:
+                # Parse filename
+                parts = filename[:-4].split('_')
+                if len(parts) < 4:  # Need at least file_id, english_name, genus, species
+                    print(f"Filename format not recognized: {filename}")
+                    continue
+                    
+                file_id = parts[0]
+                english_name = parts[1]
+                # Scientific name is exactly 2 parts: genus_species
+                scientific_name = f"{parts[2]}_{parts[3]}"
+                scientific_name_pretty = f"{parts[2].capitalize()} {parts[3].capitalize()}"
+                
+                # Load and validate the audio file
+                y, sr = librosa.load(path, sr=None)
+                
+                if sr > 22050:
+                    y = librosa.resample(y, orig_sr=sr, target_sr=44100)
+                    sr = 44100
+                elif sr < 22050:
+                    continue
+                    
+                # Save to nested folder
+                nested_folder = os.path.join(resampled_dir, english_name, scientific_name)
+                os.makedirs(nested_folder, exist_ok=True)
+                out_path = os.path.join(nested_folder, filename)
+                sf.write(out_path, y, sr)
+                print(f"Saved {filename} to {nested_folder}")
+                
+            except Exception as e:
+                print(f"ERROR: Failed to process {filename}: {str(e)}")
+                failed_files += 1
                 continue
-            file_id = parts[0]
-            english_name = parts[1]
-            scientific_name = '_'.join(parts[2:-1])
-            scientific_name_pretty = ' '.join([p.capitalize() for p in parts[2:-1]])
-            # Resample if sr is less
-            y, sr = librosa.load(path, sr=None)
-            if sr > 22050:
-                y = librosa.resample(y, orig_sr=sr, target_sr=44100)
-                sr = 44100
-            elif sr < 22050:
-                continue
-            # Save to nested folder: resampled/english_name/scientific_name/filename.wav
-            nested_folder = os.path.join(resampled_dir, english_name, scientific_name)
-            os.makedirs(nested_folder, exist_ok=True)
-            out_path = os.path.join(nested_folder, filename)
-            sf.write(out_path, y, sr)
+    
+        print(f"Resampling complete. {failed_files} files failed to process.")
 
 def main():
     print("Loading audio data clips...")
