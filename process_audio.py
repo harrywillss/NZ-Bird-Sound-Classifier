@@ -547,9 +547,9 @@ class AudioProcessor:
         For each .wav file in download_dir, resample to 44100 Hz if needed, and copy to resampled_dir
         in subfolders for both English and scientific names.
         """
-        if input("Do you want to resample audio files? (y/n): ").strip().lower() != 'y':
-            print("Skipping audio resampling.")
-            return
+        # if input("Do you want to resample audio files? (y/n): ").strip().lower() != 'y':
+        #     print("Skipping audio resampling.")
+        #     return
         if not os.path.exists(resampled_dir):
             os.makedirs(resampled_dir)
         else:

@@ -268,9 +268,9 @@ class BirdRecordingDownloader:
         self.save_metadata(filtered_recordings)
         self.report_summary(filtered_recordings)
 
-        if input("Do you want to download the recordings? (y/n): ").strip().lower() != 'y':
-            print("Download skipped.")
-            return
+        # if input("Do you want to download the recordings? (y/n): ").strip().lower() != 'y':
+        #     print("Download skipped.")
+        #     return
         # Optionally limit or download
         self.download_recordings(filtered_recordings)
 
