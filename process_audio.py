@@ -492,19 +492,25 @@ class AudioProcessor:
 
         print(f"Walking through segments directory: {segments_dir}")
         
-        # Recursively walk through all subfolders and process .wav files
+        # First pass: count total segments
+        print("Counting segments...")
         for root, dirs, files in os.walk(segments_dir):
             wav_files = [f for f in files if f.endswith('.wav')]
-            if wav_files:
-                print(f"Found {len(wav_files)} segment files in {root}")
-                total_segments += len(wav_files)
+            total_segments += len(wav_files)
+        
+        print(f"Found {total_segments} total segments to load...")
+        
+        # Second pass: load segments with progress updates
+        progress_interval = max(1, total_segments // 20)  # Show progress every 5%
+        
+        for root, dirs, files in os.walk(segments_dir):
+            wav_files = [f for f in files if f.endswith('.wav')]
             
             for file in wav_files:
                 file_path = os.path.join(root, file)
                 # Use the English name as the label (grandparent folder of segment file)
                 # Structure: segments_dir/english_name/scientific_name/segment_file.wav
                 label = os.path.basename(os.path.dirname(os.path.dirname(file_path)))
-                print(f"Loading segment {file}, label: {label}")
                 
                 try:
                     # Load the audio segment
@@ -523,12 +529,17 @@ class AudioProcessor:
                     labels.append(label)
                     loaded_segments += 1
                     
+                    # Show progress every N segments
+                    if loaded_segments % progress_interval == 0:
+                        progress_pct = (loaded_segments / total_segments) * 100
+                        print(f"Progress: {loaded_segments}/{total_segments} ({progress_pct:.1f}%)")
+                    
                 except Exception as e:
-                    print(f"  ERROR: Failed to load segment {file}: {str(e)}")
+                    print(f"ERROR: Failed to load {file}: {str(e)}")
                     failed_segments += 1
                     continue
         
-        print(f"Total segments found: {total_segments}, loaded: {loaded_segments}, failed: {failed_segments}")
+        print(f"Loading complete! Total segments: {total_segments}, loaded: {loaded_segments}, failed: {failed_segments}")
         return audio_clips, labels
 
     # Create features using Mel-Spectrogram
