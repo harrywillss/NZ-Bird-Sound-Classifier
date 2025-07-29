@@ -83,6 +83,11 @@ class BirdRecordingDownloader:
                 print(f"⚠️ Recording {file_id} has no length data, skipping download.")
                 continue
 
+            invalid_names = ["south_island_", "north_island_", "new_zealand_"]
+            for name in invalid_names:
+                if name in en:
+                    en = en.replace(name, "")
+
             genus_species = f"{gen}_{sp}"
             filename = f"{file_id}_{en}_{genus_species}_{rec_type}.wav"
             filepath = os.path.join(self.output_dir, filename)
@@ -293,7 +298,7 @@ bird_types = {
     "Silvereye/Tauhou": "Zosterops lateralis"
 }
 
-if __name__ == "__main__":
+def main():
     tqdm.tqdm.pandas(desc="Downloading recordings")
     print("🐦 Starting Bird Recording Downloader...")
     downloader = BirdRecordingDownloader(bird_types=bird_types)

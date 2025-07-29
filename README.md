@@ -69,8 +69,8 @@ The model currently classifies the following New Zealand bird species:
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/harrywillss/Tio.git
-   cd Tio
+   git clone https://github.com/harrywillss/NZ-Bird-Sound-Classifier.git
+   cd NZ-Bird-Sound-Classifier
    ```
 
 2. **Install dependencies**

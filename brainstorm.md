@@ -31,6 +31,7 @@ Planning to take a LoRA approach to finetuning the model.
     - [ ] <https://huggingface.co/google/vit-base-patch16-224>
 - [x] Ways to make the sound interpretable
   - [ ] Mel Spectograms
+  - [ ] https://medium.com/@fatikir15/tiny-transformers-for-a-big-task-bird-sound-classification-in-the-deep-learning-era-f6d291b5a3c0
 
 ## Plan
 
@@ -47,22 +48,22 @@ Planning to take a LoRA approach to finetuning the model.
 
 Start with few birds, and then evolve to more as goes on.
 
-- Tūī (Prosthemadera novaeseelandiae): 168
-- Bellbird/Korimako (Anthornis melanura): 74
-- Fantail/Pīwakawaka (Rhipidura fuliginosa): 43
-- Robin/Toutouwai (Petroica longipes): 25
-- Kākā (Nestor meridionalis): 41
-- Tomtit/Miromiro (Petroica macrocephala): 39
-- Whitehead/Pōpokotea (Mohoua albicilla): 44
-- Morepork/Ruru (Ninox novaeseelandiae): 31
-- Saddleback/Tīeke (Philesturnus rufusater): 33
-- Silvereye/Tauhou (Zosterops lateralis): 30
+- Tūī (Prosthemadera novaeseelandiae)
+- Bellbird/Korimako (Anthornis melanura)
+- Fantail/Pīwakawaka (Rhipidura fuliginosa)
+- Robin/Toutouwai (Petroica longipes)
+- Kākā (Nestor meridionalis)
+- Tomtit/Miromiro (Petroica macrocephala)
+- Whitehead/Pōpokotea (Mohoua albicilla)
+- Morepork/Ruru (Ninox novaeseelandiae)
+- Saddleback/Tīeke (Philesturnus rufusater)
+- Silvereye/Tauhou (Zosterops lateralis)
 
 Ensure consistant sample rate
 
 scipy transform - rfft
 
-40k sample rate = 20k hz
+44.1k sample rate = 22.05 Khz
 
 usually 24khz
 
