@@ -97,7 +97,6 @@ id,generic_name,scientific_name,english_name,sex,file_url,length
 842647,Prosthemadera,novaeseelandiae,Tui,,https://xeno-canto.org/842647/download,1:36
 842514,Prosthemadera,novaeseelandiae,Tui,uncertain,https://xeno-canto.org/842514/download,1:00
 684497,Prosthemadera,novaeseelandiae,Tui,male,https://xeno-canto.org/684497/download,3:04
-656719,Prosthemadera,novaeseelandiae,Tui,uncertain,https://xeno-canto.org/656719/download,0:31
 562526,Prosthemadera,novaeseelandiae,Tui,,https://xeno-canto.org/562526/download,3:46
 500855,Prosthemadera,novaeseelandiae,Tui,,https://xeno-canto.org/500855/download,1:25
 500854,Prosthemadera,novaeseelandiae,Tui,,https://xeno-canto.org/500854/download,1:19
@@ -249,6 +248,11 @@ id,generic_name,scientific_name,english_name,sex,file_url,length
 293306,Philesturnus,rufusater,Saddleback,,https://xeno-canto.org/293306/download,1:05
 206331,Philesturnus,rufusater,Saddleback,,https://xeno-canto.org/206331/download,0:12
 112766,Philesturnus,rufusater,Saddleback,,https://xeno-canto.org/112766/download,0:14
+345380,Philesturnus,carunculatus,Saddleback,,https://xeno-canto.org/345380/download,0:19
+473409,Philesturnus,carunculatus,Saddleback,,https://xeno-canto.org/473409/download,1:51
+466568,Philesturnus,carunculatus,Saddleback,,https://xeno-canto.org/466568/download,0:20
+428793,Philesturnus,carunculatus,Saddleback,,https://xeno-canto.org/428793/download,0:16
+288044,Philesturnus,carunculatus,Saddleback,,https://xeno-canto.org/288044/download,0:09
 963592,Mohoua,albicilla,Whitehead,male,https://xeno-canto.org/963592/download,1:31
 959696,Mohoua,albicilla,Whitehead,uncertain,https://xeno-canto.org/959696/download,0:24
 959320,Mohoua,albicilla,Whitehead,uncertain,https://xeno-canto.org/959320/download,1:05
@@ -365,6 +369,17 @@ id,generic_name,scientific_name,english_name,sex,file_url,length
 341679,Petroica,longipes,Robin,,https://xeno-canto.org/341679/download,2:09
 293114,Petroica,longipes,Robin,,https://xeno-canto.org/293114/download,1:43
 206322,Petroica,longipes,Robin,,https://xeno-canto.org/206322/download,1:08
+842721,Petroica,australis,Robin,male,https://xeno-canto.org/842721/download,3:35
+500859,Petroica,australis,Robin,,https://xeno-canto.org/500859/download,0:53
+500858,Petroica,australis,Robin,,https://xeno-canto.org/500858/download,0:43
+500856,Petroica,australis,Robin,,https://xeno-canto.org/500856/download,1:41
+114334,Petroica,australis,Robin,,https://xeno-canto.org/114334/download,1:10
+112820,Petroica,australis,Robin,,https://xeno-canto.org/112820/download,1:06
+33769,Petroica,australis,Robin,,https://xeno-canto.org/33769/download,0:20
+842720,Petroica,australis,Robin,uncertain,https://xeno-canto.org/842720/download,2:38
+288040,Petroica,australis,Robin,,https://xeno-canto.org/288040/download,0:22
+207331,Petroica,australis,Robin,,https://xeno-canto.org/207331/download,1:16
+75779,Petroica,australis,Robin,,https://xeno-canto.org/75779/download,0:42
 963604,Zosterops,lateralis,Silvereye,male,https://xeno-canto.org/963604/download,1:10
 962316,Zosterops,lateralis,Silvereye,uncertain,https://xeno-canto.org/962316/download,0:52
 962315,Zosterops,lateralis,Silvereye,uncertain,https://xeno-canto.org/962315/download,2:16
@@ -477,6 +492,7 @@ id,generic_name,scientific_name,english_name,sex,file_url,length
 293316,Philesturnus,rufusater,Saddleback,,https://xeno-canto.org/293316/download,0:49
 206325,Philesturnus,rufusater,Saddleback,,https://xeno-canto.org/206325/download,0:10
 185965,Philesturnus,rufusater,Saddleback,,https://xeno-canto.org/185965/download,0:06
+112765,Philesturnus,carunculatus,Saddleback,"female, male",https://xeno-canto.org/112765/download,1:46
 959009,Mohoua,albicilla,Whitehead,"female, male",https://xeno-canto.org/959009/download,0:27
 794904,Mohoua,albicilla,Whitehead,uncertain,https://xeno-canto.org/794904/download,0:13
 475986,Mohoua,albicilla,Whitehead,,https://xeno-canto.org/475986/download,0:26
@@ -512,6 +528,11 @@ id,generic_name,scientific_name,english_name,sex,file_url,length
 959276,Petroica,longipes,Robin,uncertain,https://xeno-canto.org/959276/download,3:16
 237583,Petroica,longipes,Robin,,https://xeno-canto.org/237583/download,1:43
 183186,Petroica,longipes,Robin,,https://xeno-canto.org/183186/download,0:24
+796378,Petroica,australis,Robin,uncertain,https://xeno-canto.org/796378/download,1:45
+293067,Petroica,australis,Robin,,https://xeno-canto.org/293067/download,0:14
+925466,Petroica,australis,Robin,uncertain,https://xeno-canto.org/925466/download,0:35
+473398,Petroica,australis,Robin,,https://xeno-canto.org/473398/download,0:02
+198515,Petroica,australis,Robin,,https://xeno-canto.org/198515/download,0:12
 938198,Zosterops,lateralis,Silvereye,uncertain,https://xeno-canto.org/938198/download,1:45
 821562,Zosterops,lateralis,Silvereye,uncertain,https://xeno-canto.org/821562/download,0:57
 821561,Zosterops,lateralis,Silvereye,uncertain,https://xeno-canto.org/821561/download,0:55
@@ -527,3 +548,8 @@ id,generic_name,scientific_name,english_name,sex,file_url,length
 352942,Zosterops,lateralis,Silvereye,,https://xeno-canto.org/352942/download,1:04
 46593,Zosterops,lateralis,Silvereye,,https://xeno-canto.org/46593/download,0:33
 46591,Zosterops,lateralis,Silvereye,,https://xeno-canto.org/46591/download,0:28
+842723,Anthornis,melanura,Bellbird,uncertain,https://xeno-canto.org/842723/download,1:06
+431810,Anthornis,melanura,Bellbird,,https://xeno-canto.org/431810/download,0:21
+431809,Anthornis,melanura,Bellbird,,https://xeno-canto.org/431809/download,0:07
+214593,Petroica,longipes,Robin,,https://xeno-canto.org/214593/download,0:13
+428584,Petroica,australis,Robin,,https://xeno-canto.org/428584/download,0:23

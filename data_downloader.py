@@ -198,9 +198,28 @@ class BirdRecordingDownloader:
             
             genus_species = f"{rec['gen']} {rec['sp']}"
             english_name = rec.get("en", "Unknown")
-            if (self.bird_types and genus_species not in self.bird_types.values() and
-                english_name not in self.bird_types.keys()):
-                continue
+            
+            # Check if this recording matches any of our target bird types
+            found_match = False
+            if self.bird_types:
+                for bird_name, scientific_names in self.bird_types.items():
+                    # Handle both single species and lists of species
+                    if isinstance(scientific_names, list):
+                        if genus_species in scientific_names:
+                            found_match = True
+                            break
+                    else:
+                        if genus_species == scientific_names:
+                            found_match = True
+                            break
+                    """ 
+                    # Also check by English name
+                    if english_name == bird_name:
+                        found_match = True
+                        break """
+                
+                if not found_match:
+                    continue
             
             filtered.append(rec)
         return filtered
@@ -218,8 +237,26 @@ class BirdRecordingDownloader:
         data_call = self.fetch_data()
         recordings_call = data_call.get("recordings", [])
 
+        # Fetch 'territorial call' recordings
+        self.recording_type = "territorial call"
+        self.query_string = self.build_query()
+        data_territorial_call = self.fetch_data()
+        recordings_territorial_call = data_territorial_call.get("recordings", [])
+
+        # Fetch 'alarm call' recordings
+        self.recording_type = "alarm call"
+        self.query_string = self.build_query()
+        data_alarm_call = self.fetch_data()
+        recordings_alarm_call = data_alarm_call.get("recordings", [])
+
         # Combine and remove duplicates by 'id'
-        all_recordings = {rec['id']: rec for rec in recordings_song + recordings_call}.values()
+        all_recordings = {rec['id']: rec for rec in recordings_song + recordings_call +
+                          recordings_territorial_call + recordings_alarm_call}.values()
+        
+        # Report number of recordings fetched and species found
+        print(f"Total recordings fetched: {len(all_recordings)}")
+        unique_species = {rec.get("gen", "Unknown") + " " + rec.get("sp", "Unknown") for rec in all_recordings}
+        print(f"Unique species found: {len(unique_species)}")
 
         filtered_recordings = self.filter_recordings(all_recordings)
 
@@ -247,12 +284,12 @@ bird_types = {
     "Tūī": "Prosthemadera novaeseelandiae",
     "Bellbird/Korimako": "Anthornis melanura",
     "Fantail/Pīwakawaka": "Rhipidura fuliginosa",
-    "Robin/Toutouwai": "Petroica longipes",
-    "Kākā": "Nestor meridionalis",
+    "Robin/Toutouwai": ["Petroica longipes", "Petroica australis"],
+    "Kākā": ["Nestor meridionalis", "Nestor meridionalis septentrionalis", "Nestor meridionalis meridionalis"],
     "Tomtit/Miromiro": "Petroica macrocephala",
     "Whitehead/Pōpokotea": "Mohoua albicilla",
-    "Morepork/Ruru": "Ninox novaeseelandiae",
-    "Saddleback/Tīeke": "Philesturnus rufusater",
+    "Morepork/Ruru": ["Ninox novaeseelandiae", "Ninox boobook"],
+    "Saddleback/Tīeke": ["Philesturnus rufusater", "Philesturnus carunculatus"],
     "Silvereye/Tauhou": "Zosterops lateralis"
 }
 

@@ -1,6 +1,6 @@
 {
-    "query": "cnt:\"New Zealand\" grp:\"birds\" type:\"call\" q:\">C\"",
-    "total_recordings": 528,
+    "query": "cnt:\"New Zealand\" grp:\"birds\" type:\"alarm call\" q:\">C\"",
+    "total_recordings": 554,
     "recordings": [
         {
             "id": "668542",
@@ -883,15 +883,6 @@
             "sex": "male",
             "file_url": "https://xeno-canto.org/684497/download",
             "length": "3:04"
-        },
-        {
-            "id": "656719",
-            "generic_name": "Prosthemadera",
-            "scientific_name": "novaeseelandiae",
-            "english_name": "Tui",
-            "sex": "uncertain",
-            "file_url": "https://xeno-canto.org/656719/download",
-            "length": "0:31"
         },
         {
             "id": "562526",
@@ -2253,6 +2244,51 @@
             "length": "0:14"
         },
         {
+            "id": "345380",
+            "generic_name": "Philesturnus",
+            "scientific_name": "carunculatus",
+            "english_name": "South Island Saddleback",
+            "sex": "",
+            "file_url": "https://xeno-canto.org/345380/download",
+            "length": "0:19"
+        },
+        {
+            "id": "473409",
+            "generic_name": "Philesturnus",
+            "scientific_name": "carunculatus",
+            "english_name": "South Island Saddleback",
+            "sex": "",
+            "file_url": "https://xeno-canto.org/473409/download",
+            "length": "1:51"
+        },
+        {
+            "id": "466568",
+            "generic_name": "Philesturnus",
+            "scientific_name": "carunculatus",
+            "english_name": "South Island Saddleback",
+            "sex": "",
+            "file_url": "https://xeno-canto.org/466568/download",
+            "length": "0:20"
+        },
+        {
+            "id": "428793",
+            "generic_name": "Philesturnus",
+            "scientific_name": "carunculatus",
+            "english_name": "South Island Saddleback",
+            "sex": "",
+            "file_url": "https://xeno-canto.org/428793/download",
+            "length": "0:16"
+        },
+        {
+            "id": "288044",
+            "generic_name": "Philesturnus",
+            "scientific_name": "carunculatus",
+            "english_name": "South Island Saddleback",
+            "sex": "",
+            "file_url": "https://xeno-canto.org/288044/download",
+            "length": "0:09"
+        },
+        {
             "id": "963592",
             "generic_name": "Mohoua",
             "scientific_name": "albicilla",
@@ -3297,6 +3333,105 @@
             "length": "1:08"
         },
         {
+            "id": "842721",
+            "generic_name": "Petroica",
+            "scientific_name": "australis",
+            "english_name": "South Island Robin",
+            "sex": "male",
+            "file_url": "https://xeno-canto.org/842721/download",
+            "length": "3:35"
+        },
+        {
+            "id": "500859",
+            "generic_name": "Petroica",
+            "scientific_name": "australis",
+            "english_name": "South Island Robin",
+            "sex": "",
+            "file_url": "https://xeno-canto.org/500859/download",
+            "length": "0:53"
+        },
+        {
+            "id": "500858",
+            "generic_name": "Petroica",
+            "scientific_name": "australis",
+            "english_name": "South Island Robin",
+            "sex": "",
+            "file_url": "https://xeno-canto.org/500858/download",
+            "length": "0:43"
+        },
+        {
+            "id": "500856",
+            "generic_name": "Petroica",
+            "scientific_name": "australis",
+            "english_name": "South Island Robin",
+            "sex": "",
+            "file_url": "https://xeno-canto.org/500856/download",
+            "length": "1:41"
+        },
+        {
+            "id": "114334",
+            "generic_name": "Petroica",
+            "scientific_name": "australis",
+            "english_name": "South Island Robin",
+            "sex": "",
+            "file_url": "https://xeno-canto.org/114334/download",
+            "length": "1:10"
+        },
+        {
+            "id": "112820",
+            "generic_name": "Petroica",
+            "scientific_name": "australis",
+            "english_name": "South Island Robin",
+            "sex": "",
+            "file_url": "https://xeno-canto.org/112820/download",
+            "length": "1:06"
+        },
+        {
+            "id": "33769",
+            "generic_name": "Petroica",
+            "scientific_name": "australis",
+            "english_name": "South Island Robin",
+            "sex": "",
+            "file_url": "https://xeno-canto.org/33769/download",
+            "length": "0:20"
+        },
+        {
+            "id": "842720",
+            "generic_name": "Petroica",
+            "scientific_name": "australis",
+            "english_name": "South Island Robin",
+            "sex": "uncertain",
+            "file_url": "https://xeno-canto.org/842720/download",
+            "length": "2:38"
+        },
+        {
+            "id": "288040",
+            "generic_name": "Petroica",
+            "scientific_name": "australis",
+            "english_name": "South Island Robin",
+            "sex": "",
+            "file_url": "https://xeno-canto.org/288040/download",
+            "length": "0:22"
+        },
+        {
+            "id": "207331",
+            "generic_name": "Petroica",
+            "scientific_name": "australis",
+            "english_name": "South Island Robin",
+            "sex": "",
+            "file_url": "https://xeno-canto.org/207331/download",
+            "length": "1:16"
+        },
+        {
+            "id": "75779",
+            "generic_name": "Petroica",
+            "scientific_name": "australis",
+            "english_name": "South Island Robin",
+            "sex": "",
+            "file_url": "https://xeno-canto.org/75779/download",
+            "length": "0:42"
+        },
+        {
             "id": "963604",
             "generic_name": "Zosterops",
             "scientific_name": "lateralis",
@@ -4305,6 +4440,15 @@
             "length": "0:06"
         },
         {
+            "id": "112765",
+            "generic_name": "Philesturnus",
+            "scientific_name": "carunculatus",
+            "english_name": "South Island Saddleback",
+            "sex": "female, male",
+            "file_url": "https://xeno-canto.org/112765/download",
+            "length": "1:46"
+        },
+        {
             "id": "959009",
             "generic_name": "Mohoua",
             "scientific_name": "albicilla",
@@ -4620,6 +4764,51 @@
             "length": "0:24"
         },
         {
+            "id": "796378",
+            "generic_name": "Petroica",
+            "scientific_name": "australis",
+            "english_name": "South Island Robin",
+            "sex": "uncertain",
+            "file_url": "https://xeno-canto.org/796378/download",
+            "length": "1:45"
+        },
+        {
+            "id": "293067",
+            "generic_name": "Petroica",
+            "scientific_name": "australis",
+            "english_name": "South Island Robin",
+            "sex": "",
+            "file_url": "https://xeno-canto.org/293067/download",
+            "length": "0:14"
+        },
+        {
+            "id": "925466",
+            "generic_name": "Petroica",
+            "scientific_name": "australis",
+            "english_name": "South Island Robin",
+            "sex": "uncertain",
+            "file_url": "https://xeno-canto.org/925466/download",
+            "length": "0:35"
+        },
+        {
+            "id": "473398",
+            "generic_name": "Petroica",
+            "scientific_name": "australis",
+            "english_name": "South Island Robin",
+            "sex": "",
+            "file_url": "https://xeno-canto.org/473398/download",
+            "length": "0:02"
+        },
+        {
+            "id": "198515",
+            "generic_name": "Petroica",
+            "scientific_name": "australis",
+            "english_name": "South Island Robin",
+            "sex": "",
+            "file_url": "https://xeno-canto.org/198515/download",
+            "length": "0:12"
+        },
+        {
             "id": "938198",
             "generic_name": "Zosterops",
             "scientific_name": "lateralis",
@@ -4753,6 +4942,51 @@
             "sex": "",
             "file_url": "https://xeno-canto.org/46591/download",
             "length": "0:28"
+        },
+        {
+            "id": "842723",
+            "generic_name": "Anthornis",
+            "scientific_name": "melanura",
+            "english_name": "New Zealand Bellbird",
+            "sex": "uncertain",
+            "file_url": "https://xeno-canto.org/842723/download",
+            "length": "1:06"
+        },
+        {
+            "id": "431810",
+            "generic_name": "Anthornis",
+            "scientific_name": "melanura",
+            "english_name": "New Zealand Bellbird",
+            "sex": "",
+            "file_url": "https://xeno-canto.org/431810/download",
+            "length": "0:21"
+        },
+        {
+            "id": "431809",
+            "generic_name": "Anthornis",
+            "scientific_name": "melanura",
+            "english_name": "New Zealand Bellbird",
+            "sex": "",
+            "file_url": "https://xeno-canto.org/431809/download",
+            "length": "0:07"
+        },
+        {
+            "id": "214593",
+            "generic_name": "Petroica",
+            "scientific_name": "longipes",
+            "english_name": "North Island Robin",
+            "sex": "",
+            "file_url": "https://xeno-canto.org/214593/download",
+            "length": "0:13"
+        },
+        {
+            "id": "428584",
+            "generic_name": "Petroica",
+            "scientific_name": "australis",
+            "english_name": "South Island Robin",
+            "sex": "",
+            "file_url": "https://xeno-canto.org/428584/download",
+            "length": "0:23"
         }
     ]
 }
