@@ -1,6 +1,6 @@
 # NZ Bird Classifier Model
 
-*A model trained to classify New Zealand bird sounds by their Māori identity.*
+*A model trained to classify New Zealand bird sounds.*
 
 ## Data
 
@@ -17,7 +17,7 @@ It is an idea to use a vision model like ViT to classify the sounds, as it takes
 
 ## Finetuning
 
-Planning tot take a LoRA approach to finetuning the model.
+Planning to take a LoRA approach to finetuning the model.
 
 ## Research
 
@@ -47,22 +47,20 @@ Planning tot take a LoRA approach to finetuning the model.
 
 Start with few birds, and then evolve to more as goes on.
 
-- Tūī (Prosthemadera novaeseelandiae): 165
-- Bellbird/Korimako (Anthornis melanura): 73
+- Tūī (Prosthemadera novaeseelandiae): 168
+- Bellbird/Korimako (Anthornis melanura): 74
 - Fantail/Pīwakawaka (Rhipidura fuliginosa): 43
-- Robin/Toutouwai (Petroica longipes): 41
+- Robin/Toutouwai (Petroica longipes): 25
 - Kākā (Nestor meridionalis): 41
 - Tomtit/Miromiro (Petroica macrocephala): 39
 - Whitehead/Pōpokotea (Mohoua albicilla): 44
 - Morepork/Ruru (Ninox novaeseelandiae): 31
-- Saddleback/Tīeke (Philesturnus rufusater): 39
+- Saddleback/Tīeke (Philesturnus rufusater): 33
 - Silvereye/Tauhou (Zosterops lateralis): 30
 
-Window then discrete fourier transform
+Ensure consistant sample rate
 
 scipy transform - rfft
-
-20ms ~
 
 40k sample rate = 20k hz
 
